@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Optimization | PLAN | Supply Chain Analytics</title>
+  <link rel="stylesheet" href="../../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../../../assets/css/base.css">
+  <link rel="stylesheet" href="../../../assets/css/theme-plan.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .case-header { display: flex; align-items: center; gap: var(--space-4); justify-content: center; margin-bottom: var(--space-4); }
+    .case-number { display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light)); color: white; font-size: var(--font-size-2xl); font-weight: 700; border-radius: var(--radius-lg); }
+    .objective-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-4); margin-top: var(--space-6); }
+    .objective-card { background: white; padding: var(--space-5); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-top: 3px solid var(--color-primary); }
+    .objective-card h4 { color: var(--color-primary); margin-bottom: var(--space-2); font-size: var(--font-size-base); }
+    .formula-box { background: white; padding: var(--space-6); border-radius: var(--radius-lg); margin-top: var(--space-6); text-align: center; box-shadow: var(--shadow-md); }
+    .formula { font-size: var(--font-size-2xl); color: var(--color-primary); margin: var(--space-4) 0; }
+    .method-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); margin-top: var(--space-6); }
+    .method-item { display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-4); background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
+    .method-icon { color: var(--color-primary); font-size: var(--font-size-xl); }
+    .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); margin-top: var(--space-6); text-align: center; }
+    .kpi-card { background: white; padding: var(--space-6); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+    .kpi-icon { font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-3); }
+    .related-links { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-6); }
+    .related-link { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-3) var(--space-5); background: white; border-radius: var(--radius-full); text-decoration: none; color: var(--color-text); box-shadow: var(--shadow-sm); transition: all var(--transition-fast); }
+    .related-link:hover { background: var(--color-primary); color: white; text-decoration: none; }
+  </style>
+</head>
+<body class="theme-arctic-frost">
+  <div class="presentation">
+    <section class="slide slide--title active">
+      <p style="text-transform: uppercase; letter-spacing: 0.3em; color: var(--color-primary);">PLAN | Supply Chain Analytics</p>
+      <div class="case-header"><span class="case-number">14</span></div>
+      <h1>Inventory Optimization</h1>
+      <p style="font-size: var(--font-size-lg); color: var(--color-text-muted); margin-top: var(--space-4);">Strategic stock management for cost efficiency</p>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>What Is It?</h2>
+      <div style="max-width: 800px;">
+        <p style="font-size: var(--font-size-lg);">Inventory Level Optimization strategically manages stock to meet demand while minimizing costs.</p>
+        <ul style="margin-top: var(--space-6); font-size: var(--font-size-lg);">
+          <li><strong>Demand forecasting</strong> - Predict future requirements</li>
+          <li><strong>Lead time assessment</strong> - Factor in supplier delivery times</li>
+          <li><strong>Optimal quantities</strong> - Right amount at the right time</li>
+          <li><strong>Cost balancing</strong> - Avoid overstocking and stockouts</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Business Objectives</h2>
+      <div class="objective-grid">
+        <div class="objective-card"><h4><i class="fas fa-dollar-sign"></i> Cost Efficiency</h4><p style="font-size: var(--font-size-sm);">Reduce storage, insurance, spoilage</p></div>
+        <div class="objective-card"><h4><i class="fas fa-coins"></i> Working Capital</h4><p style="font-size: var(--font-size-sm);">Improve cash flow</p></div>
+        <div class="objective-card"><h4><i class="fas fa-sync-alt"></i> Responsive SC</h4><p style="font-size: var(--font-size-sm);">Adapt to demand changes</p></div>
+        <div class="objective-card"><h4><i class="fas fa-smile"></i> Customer Satisfaction</h4><p style="font-size: var(--font-size-sm);">Product availability</p></div>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Economic Order Quantity (EOQ)</h2>
+      <div class="formula-box">
+        <p>The optimal order quantity that minimizes total costs:</p>
+        <div class="formula">Q* = √(2DK / h)</div>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); margin-top: var(--space-4); text-align: left;">
+          <div><strong>D</strong> = Annual demand</div>
+          <div><strong>K</strong> = Fixed order cost</div>
+          <div><strong>h</strong> = Holding cost/unit/year</div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Analytics Methods</h2>
+      <div class="method-grid">
+        <div class="method-item"><i class="fas fa-calculator method-icon"></i><div><strong>EOQ Model</strong><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Optimal purchase quantity</p></div></div>
+        <div class="method-item"><i class="fas fa-dice method-icon"></i><div><strong>Monte Carlo Simulation</strong><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Account for uncertainty</p></div></div>
+        <div class="method-item"><i class="fas fa-shield-alt method-icon"></i><div><strong>Safety Stock Calculations</strong><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Buffer against variability</p></div></div>
+        <div class="method-item"><i class="fas fa-sort-alpha-down method-icon"></i><div><strong>ABC Analysis</strong><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Prioritize by value</p></div></div>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Key Performance Indicators</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-sync"></i></div><h4>Inventory Turnover</h4><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Frequency of stock replacement</p></div>
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-percentage"></i></div><h4>Service Level</h4><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Meet demand without stockouts</p></div>
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-clock"></i></div><h4>Order Cycle Time</h4><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Order to dispatch time</p></div>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Related Use Cases</h2>
+      <div class="related-links">
+        <a href="../13-demand-forecasting/index.html" class="related-link"><i class="fas fa-chart-line"></i> Demand Forecasting</a>
+        <a href="../15-multi-echelon/index.html" class="related-link"><i class="fas fa-layer-group"></i> Multi-Echelon Optimization</a>
+        <a href="../16-vmi/index.html" class="related-link"><i class="fas fa-truck-loading"></i> VMI</a>
+      </div>
+      <div style="margin-top: var(--space-12); text-align: center;"><a href="../index.html" class="nav-btn"><i class="fas fa-th-large"></i> All PLAN Cases</a></div>
+      <p style="margin-top: var(--space-6); text-align: center;"><a href="../13-demand-forecasting/index.html" style="color: var(--color-primary);"><i class="fas fa-arrow-left"></i> Previous</a> &nbsp;|&nbsp; <a href="../15-multi-echelon/index.html" style="color: var(--color-primary);">Next <i class="fas fa-arrow-right"></i></a></p>
+    </section>
+  </div>
+  <script src="../../../assets/js/navigation.js"></script>
+</body>
+</html>

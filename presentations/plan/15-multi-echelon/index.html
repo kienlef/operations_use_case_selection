@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Echelon Inventory Optimization | PLAN | Supply Chain Analytics</title>
+  <link rel="stylesheet" href="../../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../../../assets/css/base.css">
+  <link rel="stylesheet" href="../../../assets/css/theme-plan.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .case-header { display: flex; align-items: center; gap: var(--space-4); justify-content: center; margin-bottom: var(--space-4); }
+    .case-number { display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light)); color: white; font-size: var(--font-size-2xl); font-weight: 700; border-radius: var(--radius-lg); }
+    .objective-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-4); margin-top: var(--space-6); }
+    .objective-card { background: white; padding: var(--space-5); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-top: 3px solid var(--color-primary); }
+    .objective-card h4 { color: var(--color-primary); margin-bottom: var(--space-2); font-size: var(--font-size-base); }
+    .echelon-viz { display: flex; justify-content: center; align-items: center; gap: var(--space-4); margin-top: var(--space-6); flex-wrap: wrap; }
+    .echelon-node { background: white; padding: var(--space-4); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); text-align: center; min-width: 140px; }
+    .echelon-node i { font-size: 2rem; color: var(--color-primary); margin-bottom: var(--space-2); }
+    .echelon-arrow { color: var(--color-primary); font-size: 1.5rem; }
+    .bullwhip-box { background: white; padding: var(--space-6); border-radius: var(--radius-lg); margin-top: var(--space-6); box-shadow: var(--shadow-md); }
+    .method-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); margin-top: var(--space-6); }
+    .method-item { display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-4); background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
+    .method-icon { color: var(--color-primary); font-size: var(--font-size-xl); }
+    .kpi-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-6); margin-top: var(--space-6); text-align: center; }
+    .kpi-card { background: white; padding: var(--space-6); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+    .kpi-icon { font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-3); }
+    .related-links { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-6); }
+    .related-link { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-3) var(--space-5); background: white; border-radius: var(--radius-full); text-decoration: none; color: var(--color-text); box-shadow: var(--shadow-sm); transition: all var(--transition-fast); }
+    .related-link:hover { background: var(--color-primary); color: white; text-decoration: none; }
+  </style>
+</head>
+<body class="theme-arctic-frost">
+  <div class="presentation">
+    <section class="slide slide--title active">
+      <p style="text-transform: uppercase; letter-spacing: 0.3em; color: var(--color-primary);">PLAN | Supply Chain Analytics</p>
+      <div class="case-header"><span class="case-number">15</span></div>
+      <h1>Multi-Echelon Inventory</h1>
+      <p style="font-size: var(--font-size-lg); color: var(--color-text-muted); margin-top: var(--space-4);">Optimizing inventory across supply chain tiers</p>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>What Is It?</h2>
+      <div style="max-width: 800px;">
+        <p style="font-size: var(--font-size-lg);">Multi-Echelon Inventory Optimization synchronizes inventory decisions across all supply chain stages.</p>
+        <ul style="margin-top: var(--space-6); font-size: var(--font-size-lg);">
+          <li><strong>Raw materials</strong> - Supplier inventory levels</li>
+          <li><strong>Work-in-progress</strong> - Manufacturing buffers</li>
+          <li><strong>Finished goods</strong> - Distribution centers & warehouses</li>
+          <li><strong>Network optimization</strong> - Right inventory at right place & time</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Supply Chain Echelons</h2>
+      <div class="echelon-viz">
+        <div class="echelon-node"><i class="fas fa-truck-loading"></i><h4>Suppliers</h4></div>
+        <span class="echelon-arrow">→</span>
+        <div class="echelon-node"><i class="fas fa-industry"></i><h4>Manufacturing</h4></div>
+        <span class="echelon-arrow">→</span>
+        <div class="echelon-node"><i class="fas fa-warehouse"></i><h4>Distribution</h4></div>
+        <span class="echelon-arrow">→</span>
+        <div class="echelon-node"><i class="fas fa-store"></i><h4>Retail</h4></div>
+        <span class="echelon-arrow">→</span>
+        <div class="echelon-node"><i class="fas fa-user"></i><h4>Customer</h4></div>
+      </div>
+      <p style="text-align: center; margin-top: var(--space-6); color: var(--color-text-muted);">Each echelon requires coordinated inventory policies</p>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>The Bullwhip Effect</h2>
+      <div class="bullwhip-box">
+        <p style="font-size: var(--font-size-lg);">Small demand fluctuations at retail cause progressively larger fluctuations upstream.</p>
+        <div style="margin-top: var(--space-4);"><strong>Multi-echelon optimization mitigates this by:</strong></div>
+        <ul style="margin-top: var(--space-3);">
+          <li>Coordinating inventory policies across levels</li>
+          <li>Sharing demand information throughout the chain</li>
+          <li>Optimizing network parameters jointly</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Analytics Methods</h2>
+      <div class="method-grid">
+        <div class="method-item"><i class="fas fa-project-diagram method-icon"></i><div><strong>Multi-Echelon Algorithms</strong><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Upstream & downstream policies</p></div></div>
+        <div class="method-item"><i class="fas fa-random method-icon"></i><div><strong>Stochastic Optimization</strong><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Handle demand/supply uncertainty</p></div></div>
+        <div class="method-item"><i class="fas fa-desktop method-icon"></i><div><strong>Simulation Optimization</strong><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Evaluate different scenarios</p></div></div>
+        <div class="method-item"><i class="fas fa-robot method-icon"></i><div><strong>Deep Reinforcement Learning</strong><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Dynamic reorder policies</p></div></div>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Key Performance Indicators</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-dollar-sign"></i></div><h4>Total Inventory Cost</h4><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Combined cost across all echelons</p></div>
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-check-circle"></i></div><h4>Service Level</h4><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">% demand fulfilled on time</p></div>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Related Use Cases</h2>
+      <div class="related-links">
+        <a href="../14-inventory-optimization/index.html" class="related-link"><i class="fas fa-boxes"></i> Inventory Optimization</a>
+        <a href="../16-vmi/index.html" class="related-link"><i class="fas fa-truck-loading"></i> VMI</a>
+        <a href="../../deliver/22-network-design/index.html" class="related-link"><i class="fas fa-network-wired"></i> Network Design</a>
+      </div>
+      <div style="margin-top: var(--space-12); text-align: center;"><a href="../index.html" class="nav-btn"><i class="fas fa-th-large"></i> All PLAN Cases</a></div>
+      <p style="margin-top: var(--space-6); text-align: center;"><a href="../14-inventory-optimization/index.html" style="color: var(--color-primary);"><i class="fas fa-arrow-left"></i> Previous</a> &nbsp;|&nbsp; <a href="../16-vmi/index.html" style="color: var(--color-primary);">Next <i class="fas fa-arrow-right"></i></a></p>
+    </section>
+  </div>
+  <script src="../../../assets/js/navigation.js"></script>
+</body>
+</html>

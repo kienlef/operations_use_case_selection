@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLAN | Supply Chain Analytics</title>
+  
+  <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/theme-plan.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    .case-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-6);
+      margin-top: var(--space-6);
+    }
+    
+    .case-card {
+      text-decoration: none;
+      color: inherit;
+      transition: transform var(--transition-base);
+    }
+    
+    .case-card:hover {
+      text-decoration: none;
+      transform: translateY(-4px);
+    }
+    
+    .case-card .card {
+      height: 100%;
+    }
+    
+    .case-card h3 {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      color: var(--color-primary);
+    }
+    
+    .case-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+      color: white;
+      font-size: var(--font-size-sm);
+      font-weight: 700;
+      border-radius: var(--radius-md);
+    }
+    
+    .themes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-8);
+      margin-top: var(--space-6);
+    }
+    
+    .theme-section {
+      background: white;
+      padding: var(--space-6);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+    }
+    
+    .theme-section h3 {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      color: var(--color-primary);
+      margin-bottom: var(--space-4);
+    }
+    
+    .case-links {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      margin-top: var(--space-8);
+      align-items: center;
+    }
+    
+    .case-links a {
+      width: 380px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+    }
+    
+    .frost-highlight {
+      color: var(--color-primary);
+    }
+    
+    @media (max-width: 768px) {
+      .themes-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .case-links a {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body class="theme-arctic-frost">
+  <div class="presentation">
+    
+    <!-- Slide 1: Cluster Title -->
+    <section class="slide slide--title active">
+      <p style="color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.3em; margin-bottom: var(--space-4);">
+        Supply Chain Analytics
+      </p>
+      <h1 style="display: flex; align-items: center; justify-content: center; gap: var(--space-4);">
+        <i class="fas fa-chart-line"></i> PLAN
+      </h1>
+      <p style="font-size: var(--font-size-xl); margin-top: var(--space-6); color: var(--color-text);">
+        Demand Forecasting, Inventory & <span class="frost-highlight">S&OP Analytics</span>
+      </p>
+    </section>
+    
+    <!-- Slide 2: What is Planning Analytics -->
+    <section class="slide slide--content">
+      <h2>What is Supply Chain Planning?</h2>
+      <div style="max-width: 800px;">
+        <p style="font-size: var(--font-size-lg);">
+          Supply chain planning analytics enables data-driven decisions across strategic, tactical, and operational levels:
+        </p>
+        <ul style="font-size: var(--font-size-lg); margin-top: var(--space-6);">
+          <li><strong>Demand forecasting</strong> - Predicting future customer demand</li>
+          <li><strong>Inventory optimization</strong> - Balancing stock levels and costs</li>
+          <li><strong>Multi-echelon planning</strong> - Coordinating across supply chain tiers</li>
+          <li><strong>S&OP alignment</strong> - Integrating sales and operations plans</li>
+          <li><strong>Risk management</strong> - Building supply chain resilience</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Slide 3: Use Cases -->
+    <section class="slide slide--content">
+      <h2>PLAN Use Cases</h2>
+      <div class="case-grid">
+        
+        <a href="13-demand-forecasting/index.html" class="case-card">
+          <div class="card">
+            <h3><span class="case-number">13</span> Demand Forecasting</h3>
+            <p>Predictive analytics for customer demand using time-series and ML methods.</p>
+          </div>
+        </a>
+        
+        <a href="14-inventory-optimization/index.html" class="case-card">
+          <div class="card">
+            <h3><span class="case-number">14</span> Inventory Optimization</h3>
+            <p>EOQ, safety stock calculations, and optimal stock level management.</p>
+          </div>
+        </a>
+        
+        <a href="15-multi-echelon/index.html" class="case-card">
+          <div class="card">
+            <h3><span class="case-number">15</span> Multi-Echelon Optimization</h3>
+            <p>Coordinated inventory management across supply chain tiers.</p>
+          </div>
+        </a>
+        
+        <a href="16-vmi/index.html" class="case-card">
+          <div class="card">
+            <h3><span class="case-number">16</span> Vendor Managed Inventory</h3>
+            <p>Supplier-managed replenishment with collaborative forecasting.</p>
+          </div>
+        </a>
+        
+        <a href="17-segmentation/index.html" class="case-card">
+          <div class="card">
+            <h3><span class="case-number">17</span> Supply Chain Segmentation</h3>
+            <p>ABC-XYZ analysis and differentiated supply chain strategies.</p>
+          </div>
+        </a>
+        
+        <a href="18-sop/index.html" class="case-card">
+          <div class="card">
+            <h3><span class="case-number">18</span> Sales & Operations Planning</h3>
+            <p>Aligning demand and supply plans across the organization.</p>
+          </div>
+        </a>
+        
+        <a href="19-risk-analysis/index.html" class="case-card">
+          <div class="card">
+            <h3><span class="case-number">19</span> Supply Chain Risk Analysis</h3>
+            <p>End-to-end risk identification and resilience planning.</p>
+          </div>
+        </a>
+        
+      </div>
+    </section>
+    
+    <!-- Slide 4: Common Themes -->
+    <section class="slide slide--content">
+      <h2>Planning Analytics Themes</h2>
+      <div class="themes-grid">
+        <div class="theme-section">
+          <h3><i class="fas fa-database"></i> Data Foundation</h3>
+          <ul>
+            <li>Historical sales & demand</li>
+            <li>Inventory levels & costs</li>
+            <li>Lead time data</li>
+            <li>Market & external factors</li>
+            <li>Capacity constraints</li>
+          </ul>
+        </div>
+        <div class="theme-section">
+          <h3><i class="fas fa-brain"></i> Methods</h3>
+          <ul>
+            <li>Time-series (ARIMA, Prophet)</li>
+            <li>Machine learning forecasting</li>
+            <li>Optimization algorithms</li>
+            <li>Monte Carlo simulation</li>
+            <li>Scenario analysis</li>
+          </ul>
+        </div>
+        <div class="theme-section">
+          <h3><i class="fas fa-chart-bar"></i> Key Metrics</h3>
+          <ul>
+            <li>Forecast accuracy (MAPE)</li>
+            <li>Inventory turns</li>
+            <li>Service level / Fill rate</li>
+            <li>Days of inventory</li>
+            <li>Plan adherence</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 5: Navigation -->
+    <section class="slide slide--title">
+      <h2>Explore PLAN Cases</h2>
+      <div class="case-links">
+        <a href="13-demand-forecasting/index.html" class="nav-btn">
+          <span class="case-number" style="margin-right: var(--space-3);">13</span> Demand Forecasting <i class="fas fa-arrow-right" style="margin-left: auto;"></i>
+        </a>
+        <a href="14-inventory-optimization/index.html" class="nav-btn">
+          <span class="case-number" style="margin-right: var(--space-3);">14</span> Inventory Optimization <i class="fas fa-arrow-right" style="margin-left: auto;"></i>
+        </a>
+        <a href="15-multi-echelon/index.html" class="nav-btn">
+          <span class="case-number" style="margin-right: var(--space-3);">15</span> Multi-Echelon Optimization <i class="fas fa-arrow-right" style="margin-left: auto;"></i>
+        </a>
+        <a href="16-vmi/index.html" class="nav-btn">
+          <span class="case-number" style="margin-right: var(--space-3);">16</span> Vendor Managed Inventory <i class="fas fa-arrow-right" style="margin-left: auto;"></i>
+        </a>
+        <a href="17-segmentation/index.html" class="nav-btn">
+          <span class="case-number" style="margin-right: var(--space-3);">17</span> Supply Chain Segmentation <i class="fas fa-arrow-right" style="margin-left: auto;"></i>
+        </a>
+        <a href="18-sop/index.html" class="nav-btn">
+          <span class="case-number" style="margin-right: var(--space-3);">18</span> Sales & Operations Planning <i class="fas fa-arrow-right" style="margin-left: auto;"></i>
+        </a>
+        <a href="19-risk-analysis/index.html" class="nav-btn">
+          <span class="case-number" style="margin-right: var(--space-3);">19</span> Supply Chain Risk Analysis <i class="fas fa-arrow-right" style="margin-left: auto;"></i>
+        </a>
+      </div>
+      <p style="margin-top: var(--space-8);">
+        <a href="../../index.html" style="color: var(--color-primary);">
+          <i class="fas fa-home"></i> Back to Home
+        </a>
+        &nbsp;|&nbsp;
+        <a href="../make/index.html" style="color: var(--color-primary);">
+          <i class="fas fa-arrow-left"></i> MAKE
+        </a>
+        &nbsp;|&nbsp;
+        <a href="../deliver/index.html" style="color: var(--color-primary);">
+          DELIVER <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </section>
+    
+  </div>
+  
+  <script src="../../assets/js/navigation.js"></script>
+</body>
+</html>

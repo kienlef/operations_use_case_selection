@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supply Chain Segmentation | PLAN | Supply Chain Analytics</title>
+  <link rel="stylesheet" href="../../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../../../assets/css/base.css">
+  <link rel="stylesheet" href="../../../assets/css/theme-plan.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .case-header { display: flex; align-items: center; gap: var(--space-4); justify-content: center; margin-bottom: var(--space-4); }
+    .case-number { display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light)); color: white; font-size: var(--font-size-2xl); font-weight: 700; border-radius: var(--radius-lg); }
+    .seg-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-6); margin-top: var(--space-6); }
+    .seg-card { background: white; padding: var(--space-5); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+    .seg-card h4 { color: var(--color-primary); margin-bottom: var(--space-2); }
+    .matrix-table { width: 100%; margin-top: var(--space-6); background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); }
+    .matrix-table th, .matrix-table td { padding: var(--space-3); text-align: center; border: 1px solid var(--color-border); font-size: var(--font-size-sm); }
+    .matrix-table th { background: var(--color-primary); color: white; }
+    .method-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); margin-top: var(--space-6); }
+    .method-item { padding: var(--space-4); background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); text-align: center; }
+    .method-icon { color: var(--color-primary); font-size: var(--font-size-2xl); margin-bottom: var(--space-2); }
+    .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); margin-top: var(--space-6); text-align: center; }
+    .kpi-card { background: white; padding: var(--space-6); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+    .kpi-icon { font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-3); }
+    .related-links { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-6); }
+    .related-link { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-3) var(--space-5); background: white; border-radius: var(--radius-full); text-decoration: none; color: var(--color-text); box-shadow: var(--shadow-sm); transition: all var(--transition-fast); }
+    .related-link:hover { background: var(--color-primary); color: white; text-decoration: none; }
+  </style>
+</head>
+<body class="theme-arctic-frost">
+  <div class="presentation">
+    <section class="slide slide--title active">
+      <p style="text-transform: uppercase; letter-spacing: 0.3em; color: var(--color-primary);">PLAN | Supply Chain Analytics</p>
+      <div class="case-header"><span class="case-number">17</span></div>
+      <h1>Supply Chain Segmentation</h1>
+      <p style="font-size: var(--font-size-lg); color: var(--color-text-muted); margin-top: var(--space-4);">ABC-XYZ analysis & differentiated strategies</p>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>What Is It?</h2>
+      <div style="max-width: 800px;">
+        <p style="font-size: var(--font-size-lg);">Supply Chain Segmentation divides the supply chain into distinct groups based on specific criteria.</p>
+        <ul style="margin-top: var(--space-6); font-size: var(--font-size-lg);">
+          <li><strong>Customer needs</strong> - Service level requirements</li>
+          <li><strong>Product type</strong> - Demand patterns & value</li>
+          <li><strong>Market demands</strong> - Volatility & seasonality</li>
+          <li><strong>Logistics requirements</strong> - Lead times & handling</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Segmentation Types</h2>
+      <div class="seg-grid">
+        <div class="seg-card"><h4><i class="fas fa-truck-loading"></i> Supplier</h4><p style="font-size: var(--font-size-sm);">Strategic importance, performance, risk (Kraljic Matrix)</p></div>
+        <div class="seg-card"><h4><i class="fas fa-box"></i> Product</h4><p style="font-size: var(--font-size-sm);">Life cycle, value, demand volatility</p></div>
+        <div class="seg-card"><h4><i class="fas fa-globe"></i> Geographic</h4><p style="font-size: var(--font-size-sm);">Regional characteristics & requirements</p></div>
+        <div class="seg-card"><h4><i class="fas fa-users"></i> Customer</h4><p style="font-size: var(--font-size-sm);">Demand patterns, profitability, service needs</p></div>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>ABC-XYZ Matrix</h2>
+      <table class="matrix-table">
+        <thead><tr><th></th><th>X (Low Variability)</th><th>Y (Medium)</th><th>Z (High Variability)</th></tr></thead>
+        <tbody>
+          <tr><td style="background: var(--color-primary-light);"><strong>A (High Value)</strong></td><td>ML Forecasts (auto)</td><td>Statistical + manual</td><td>Manual forecast</td></tr>
+          <tr><td style="background: var(--color-primary-light);"><strong>B (Medium)</strong></td><td>Statistical forecast</td><td>Statistical + manual</td><td>Manual forecast</td></tr>
+          <tr><td style="background: var(--color-primary-light);"><strong>C (Low Value)</strong></td><td>Statistical forecast</td><td>Aggregated</td><td>Aggregated</td></tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Analytics Methods</h2>
+      <div class="method-grid">
+        <div class="method-item"><i class="fas fa-project-diagram method-icon"></i><strong>K-Means Clustering</strong><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Group by similarity</p></div>
+        <div class="method-item"><i class="fas fa-chart-line method-icon"></i><strong>Predictive Analytics</strong><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Segment performance</p></div>
+        <div class="method-item"><i class="fas fa-code-branch method-icon"></i><strong>Decision Trees</strong><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Auto-assignment rules</p></div>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Key Performance Indicators</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-smile"></i></div><h4>Customer Satisfaction</h4><p style="font-size: var(--font-size-sm);">Tailored service</p></div>
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-coins"></i></div><h4>Cost-to-Serve</h4><p style="font-size: var(--font-size-sm);">Aligned strategies</p></div>
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-percentage"></i></div><h4>Profit Margins</h4><p style="font-size: var(--font-size-sm);">Segment optimization</p></div>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Related Use Cases</h2>
+      <div class="related-links">
+        <a href="../13-demand-forecasting/index.html" class="related-link"><i class="fas fa-chart-line"></i> Demand Forecasting</a>
+        <a href="../../source/02-supplier-risk/index.html" class="related-link"><i class="fas fa-exclamation-triangle"></i> Supplier Risk</a>
+        <a href="../14-inventory-optimization/index.html" class="related-link"><i class="fas fa-boxes"></i> Inventory Optimization</a>
+      </div>
+      <div style="margin-top: var(--space-12); text-align: center;"><a href="../index.html" class="nav-btn"><i class="fas fa-th-large"></i> All PLAN Cases</a></div>
+      <p style="margin-top: var(--space-6); text-align: center;"><a href="../16-vmi/index.html" style="color: var(--color-primary);"><i class="fas fa-arrow-left"></i> Previous</a> &nbsp;|&nbsp; <a href="../18-sop/index.html" style="color: var(--color-primary);">Next <i class="fas fa-arrow-right"></i></a></p>
+    </section>
+  </div>
+  <script src="../../../assets/js/navigation.js"></script>
+</body>
+</html>

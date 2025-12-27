@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAKE | Supply Chain Analytics</title>
+  
+  <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/theme-make.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    .case-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-6);
+      margin-top: var(--space-6);
+    }
+    
+    .case-card {
+      text-decoration: none;
+      color: inherit;
+      transition: transform var(--transition-base);
+    }
+    
+    .case-card:hover {
+      text-decoration: none;
+      transform: translateY(-4px);
+    }
+    
+    .case-card .card {
+      height: 100%;
+    }
+    
+    .case-card h3 {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      color: var(--color-accent);
+    }
+    
+    .case-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+      color: var(--color-bg);
+      font-size: var(--font-size-sm);
+      font-weight: 700;
+      border-radius: var(--radius-sm);
+    }
+    
+    .themes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-8);
+      margin-top: var(--space-6);
+    }
+    
+    .theme-section {
+      background: var(--color-bg-alt);
+      padding: var(--space-6);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border);
+    }
+    
+    .theme-section h3 {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      color: var(--color-accent);
+      margin-bottom: var(--space-4);
+    }
+    
+    .case-links {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      margin-top: var(--space-8);
+      align-items: center;
+    }
+    
+    .case-links a {
+      width: 380px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+    }
+    
+    .tech-highlight {
+      color: var(--color-accent);
+      text-shadow: 0 0 10px var(--color-accent);
+    }
+    
+    @media (max-width: 768px) {
+      .themes-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .case-links a {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body class="theme-tech-innovation">
+  <div class="presentation">
+    
+    <!-- Slide 1: Cluster Title -->
+    <section class="slide slide--title active">
+      <p style="color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.3em; margin-bottom: var(--space-4);">
+        Supply Chain Analytics
+      </p>
+      <h1 style="display: flex; align-items: center; justify-content: center; gap: var(--space-4);">
+        <i class="fas fa-industry"></i> MAKE
+      </h1>
+      <p style="font-size: var(--font-size-xl); margin-top: var(--space-6); color: var(--color-text);">
+        Manufacturing Analytics & <span class="tech-highlight">Industry 4.0</span>
+      </p>
+    </section>
+    
+    <!-- Slide 2: What is Manufacturing Analytics -->
+    <section class="slide slide--content">
+      <h2>What is Manufacturing Analytics?</h2>
+      <div style="max-width: 800px;">
+        <p style="font-size: var(--font-size-lg);">
+          Manufacturing analytics leverages data from production systems, IoT sensors, and enterprise systems to optimize operations:
+        </p>
+        <ul style="font-size: var(--font-size-lg); margin-top: var(--space-6);">
+          <li><strong>Cost optimization</strong> - Reducing manufacturing expenses through data-driven insights</li>
+          <li><strong>Production scheduling</strong> - Optimizing resource allocation and sequencing</li>
+          <li><strong>Predictive maintenance</strong> - Preventing equipment failures before they occur</li>
+          <li><strong>Quality assurance</strong> - Using AI/ML to detect defects automatically</li>
+          <li><strong>Digital twins</strong> - Virtual replicas for simulation and optimization</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Slide 3: Use Cases -->
+    <section class="slide slide--content">
+      <h2>MAKE Use Cases</h2>
+      <div class="case-grid">
+        
+        <a href="06-manufacturing-cost/index.html" class="case-card">
+          <div class="card">
+            <h3><span class="case-number">06</span> Manufacturing Cost</h3>
+            <p>BOM analysis, cost allocation, and expense optimization across production processes.</p>
+          </div>
+        </a>
+        
+        <a href="07-production-scheduling/index.html" class="case-card">
+          <div class="card">
+            <h3><span class="case-number">07</span> Production Scheduling</h3>
+            <p>Optimization of production sequences, resource allocation, and timeline management.</p>
+          </div>
+        </a>
+        
+        <a href="08-batch-size/index.html" class="case-card">
+          <div class="card">
+            <h3><span class="case-number">08</span> Batch Size Optimization</h3>
+            <p>Finding optimal production quantities balancing setup costs and inventory.</p>
+          </div>
+        </a>
+        
+        <a href="09-predictive-maintenance/index.html" class="case-card">
+          <div class="card">
+            <h3><span class="case-number">09</span> Predictive Maintenance</h3>
+            <p>ML-driven equipment monitoring to predict and prevent failures.</p>
+          </div>
+        </a>
+        
+        <a href="10-ai-quality/index.html" class="case-card">
+          <div class="card">
+            <h3><span class="case-number">10</span> AI Quality Assurance</h3>
+            <p>Computer vision and ML for automated defect detection and quality control.</p>
+          </div>
+        </a>
+        
+        <a href="11-digital-twin/index.html" class="case-card">
+          <div class="card">
+            <h3><span class="case-number">11</span> Digital Twin</h3>
+            <p>Virtual models of physical systems for simulation and optimization.</p>
+          </div>
+        </a>
+        
+        <a href="12-oee/index.html" class="case-card">
+          <div class="card">
+            <h3><span class="case-number">12</span> OEE Analytics</h3>
+            <p>Overall Equipment Effectiveness measurement and root cause analysis.</p>
+          </div>
+        </a>
+        
+      </div>
+    </section>
+    
+    <!-- Slide 4: Common Themes -->
+    <section class="slide slide--content">
+      <h2>Technology Stack</h2>
+      <div class="themes-grid">
+        <div class="theme-section">
+          <h3><i class="fas fa-microchip"></i> IoT & Sensors</h3>
+          <ul>
+            <li>Real-time equipment monitoring</li>
+            <li>Vibration & temperature sensors</li>
+            <li>Production counters</li>
+            <li>Quality inspection cameras</li>
+            <li>Environmental sensors</li>
+          </ul>
+        </div>
+        <div class="theme-section">
+          <h3><i class="fas fa-brain"></i> AI/ML Methods</h3>
+          <ul>
+            <li>Anomaly detection</li>
+            <li>Computer vision (CNNs)</li>
+            <li>Time series forecasting</li>
+            <li>Optimization algorithms</li>
+            <li>Simulation modeling</li>
+          </ul>
+        </div>
+        <div class="theme-section">
+          <h3><i class="fas fa-chart-line"></i> Key Metrics</h3>
+          <ul>
+            <li>OEE (Availability × Performance × Quality)</li>
+            <li>MTBF / MTTR</li>
+            <li>Defect rate</li>
+            <li>Production yield</li>
+            <li>Cost per unit</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 5: Navigation -->
+    <section class="slide slide--title">
+      <h2>Explore MAKE Cases</h2>
+      <div class="case-links">
+        <a href="06-manufacturing-cost/index.html" class="nav-btn">
+          <span class="case-number" style="margin-right: var(--space-3);">06</span> Manufacturing Cost Analysis <i class="fas fa-arrow-right" style="margin-left: auto;"></i>
+        </a>
+        <a href="07-production-scheduling/index.html" class="nav-btn">
+          <span class="case-number" style="margin-right: var(--space-3);">07</span> Production Scheduling <i class="fas fa-arrow-right" style="margin-left: auto;"></i>
+        </a>
+        <a href="08-batch-size/index.html" class="nav-btn">
+          <span class="case-number" style="margin-right: var(--space-3);">08</span> Batch Size Optimization <i class="fas fa-arrow-right" style="margin-left: auto;"></i>
+        </a>
+        <a href="09-predictive-maintenance/index.html" class="nav-btn">
+          <span class="case-number" style="margin-right: var(--space-3);">09</span> Predictive Maintenance <i class="fas fa-arrow-right" style="margin-left: auto;"></i>
+        </a>
+        <a href="10-ai-quality/index.html" class="nav-btn">
+          <span class="case-number" style="margin-right: var(--space-3);">10</span> AI Quality Assurance <i class="fas fa-arrow-right" style="margin-left: auto;"></i>
+        </a>
+        <a href="11-digital-twin/index.html" class="nav-btn">
+          <span class="case-number" style="margin-right: var(--space-3);">11</span> Digital Twin <i class="fas fa-arrow-right" style="margin-left: auto;"></i>
+        </a>
+        <a href="12-oee/index.html" class="nav-btn">
+          <span class="case-number" style="margin-right: var(--space-3);">12</span> Overall Equipment Effectiveness <i class="fas fa-arrow-right" style="margin-left: auto;"></i>
+        </a>
+      </div>
+      <p style="margin-top: var(--space-8);">
+        <a href="../../index.html" style="color: var(--color-accent);">
+          <i class="fas fa-home"></i> Back to Home
+        </a>
+        &nbsp;|&nbsp;
+        <a href="../source/index.html" style="color: var(--color-accent);">
+          <i class="fas fa-arrow-left"></i> SOURCE
+        </a>
+        &nbsp;|&nbsp;
+        <a href="../plan/index.html" style="color: var(--color-accent);">
+          PLAN <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </section>
+    
+  </div>
+  
+  <script src="../../assets/js/navigation.js"></script>
+</body>
+</html>

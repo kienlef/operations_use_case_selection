@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DELIVER | Supply Chain Analytics</title>
+  <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/theme-deliver.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .case-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); margin-top: var(--space-6); }
+    .case-card { text-decoration: none; color: inherit; transition: transform var(--transition-base); }
+    .case-card:hover { text-decoration: none; transform: translateY(-4px); }
+    .case-card .card { height: 100%; }
+    .case-card h3 { display: flex; align-items: center; gap: var(--space-3); color: var(--color-primary); }
+    .case-number { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: var(--color-primary); color: white; font-size: var(--font-size-sm); font-weight: 700; border-radius: var(--radius-sm); }
+    .themes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-8); margin-top: var(--space-6); }
+    .theme-section { background: white; padding: var(--space-6); border-radius: var(--radius-md); border: 1px solid var(--color-border); }
+    .theme-section h3 { display: flex; align-items: center; gap: var(--space-2); color: var(--color-primary); margin-bottom: var(--space-4); }
+    .case-links { display: flex; flex-direction: column; gap: var(--space-4); margin-top: var(--space-8); align-items: center; }
+    .case-links a { width: 380px; text-align: left; display: flex; align-items: center; }
+    @media (max-width: 768px) { .themes-grid { grid-template-columns: 1fr; } .case-links a { width: 100%; } }
+  </style>
+</head>
+<body class="theme-modern-minimalist">
+  <div class="presentation">
+    <section class="slide slide--title active">
+      <p style="color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.3em; margin-bottom: var(--space-4);">Supply Chain Analytics</p>
+      <h1 style="display: flex; align-items: center; justify-content: center; gap: var(--space-4);"><i class="fas fa-shipping-fast"></i> DELIVER</h1>
+      <p style="font-size: var(--font-size-xl); margin-top: var(--space-6); color: var(--color-text);">Customer Satisfaction, Fulfillment & Logistics</p>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>What is Delivery Analytics?</h2>
+      <div style="max-width: 800px;">
+        <p style="font-size: var(--font-size-lg);">Delivery analytics optimizes the final stages of the supply chain to enhance customer experience:</p>
+        <ul style="font-size: var(--font-size-lg); margin-top: var(--space-6);">
+          <li><strong>Customer satisfaction</strong> - Understanding and meeting expectations</li>
+          <li><strong>Order fulfillment</strong> - On-Time In-Full (OTIF) performance</li>
+          <li><strong>Network design</strong> - Optimal facility locations</li>
+          <li><strong>Transportation</strong> - Cost optimization and routing</li>
+          <li><strong>Last mile</strong> - Delivery time prediction and optimization</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>DELIVER Use Cases</h2>
+      <div class="case-grid">
+        <a href="20-customer-satisfaction/index.html" class="case-card"><div class="card"><h3><span class="case-number">20</span> Customer Satisfaction</h3><p>NPS, CSAT analysis, and customer experience optimization.</p></div></a>
+        <a href="21-order-fulfillment/index.html" class="case-card"><div class="card"><h3><span class="case-number">21</span> Order Fulfillment</h3><p>OTIF analytics, process mining, and fulfillment optimization.</p></div></a>
+        <a href="22-network-design/index.html" class="case-card"><div class="card"><h3><span class="case-number">22</span> Network Design</h3><p>Facility location optimization and supply chain structure.</p></div></a>
+        <a href="23-transportation-cost/index.html" class="case-card"><div class="card"><h3><span class="case-number">23</span> Transportation Cost</h3><p>Mode selection, consolidation, and cost optimization.</p></div></a>
+        <a href="24-delivery-time/index.html" class="case-card"><div class="card"><h3><span class="case-number">24</span> Delivery Prediction</h3><p>ML-based delivery time forecasting.</p></div></a>
+        <a href="25-route-optimization/index.html" class="case-card"><div class="card"><h3><span class="case-number">25</span> Route Optimization</h3><p>VRP solving and last-mile efficiency.</p></div></a>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Delivery Analytics Themes</h2>
+      <div class="themes-grid">
+        <div class="theme-section"><h3><i class="fas fa-database"></i> Data Foundation</h3><ul><li>Order & shipment data</li><li>Customer feedback</li><li>Traffic & location data</li><li>Carrier performance</li></ul></div>
+        <div class="theme-section"><h3><i class="fas fa-brain"></i> Methods</h3><ul><li>Process mining</li><li>Route optimization (VRP)</li><li>ML prediction models</li><li>Sentiment analysis</li></ul></div>
+        <div class="theme-section"><h3><i class="fas fa-chart-bar"></i> Key Metrics</h3><ul><li>OTIF rate</li><li>NPS / CSAT</li><li>Cost per delivery</li><li>On-time delivery %</li></ul></div>
+      </div>
+    </section>
+    
+    <section class="slide slide--title">
+      <h2>Explore DELIVER Cases</h2>
+      <div class="case-links">
+        <a href="20-customer-satisfaction/index.html" class="nav-btn"><span class="case-number" style="margin-right: var(--space-3);">20</span> Customer Satisfaction <i class="fas fa-arrow-right" style="margin-left: auto;"></i></a>
+        <a href="21-order-fulfillment/index.html" class="nav-btn"><span class="case-number" style="margin-right: var(--space-3);">21</span> Order Fulfillment <i class="fas fa-arrow-right" style="margin-left: auto;"></i></a>
+        <a href="22-network-design/index.html" class="nav-btn"><span class="case-number" style="margin-right: var(--space-3);">22</span> Network Design <i class="fas fa-arrow-right" style="margin-left: auto;"></i></a>
+        <a href="23-transportation-cost/index.html" class="nav-btn"><span class="case-number" style="margin-right: var(--space-3);">23</span> Transportation Cost <i class="fas fa-arrow-right" style="margin-left: auto;"></i></a>
+        <a href="24-delivery-time/index.html" class="nav-btn"><span class="case-number" style="margin-right: var(--space-3);">24</span> Delivery Prediction <i class="fas fa-arrow-right" style="margin-left: auto;"></i></a>
+        <a href="25-route-optimization/index.html" class="nav-btn"><span class="case-number" style="margin-right: var(--space-3);">25</span> Route Optimization <i class="fas fa-arrow-right" style="margin-left: auto;"></i></a>
+      </div>
+      <p style="margin-top: var(--space-8);"><a href="../../index.html" style="color: var(--color-primary);"><i class="fas fa-home"></i> Back to Home</a> &nbsp;|&nbsp; <a href="../plan/index.html" style="color: var(--color-primary);"><i class="fas fa-arrow-left"></i> PLAN</a></p>
+    </section>
+  </div>
+  <script src="../../assets/js/navigation.js"></script>
+</body>
+</html>

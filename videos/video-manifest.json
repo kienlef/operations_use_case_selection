@@ -1,0 +1,168 @@
+{
+  "channel": {
+    "id": "DATA2VALUE_CHANNEL_ID",
+    "name": "Data2Value",
+    "url": "https://youtube.com/@data2value"
+  },
+  "playlist": {
+    "id": "SUPPLY_CHAIN_PLAYLIST_ID",
+    "name": "Supply Chain Analytics"
+  },
+  "videos": {
+    "overview": {
+      "id": null,
+      "title": "Supply Chain Analytics Overview",
+      "status": "planned"
+    },
+    "source-intro": {
+      "id": null,
+      "title": "SOURCE - Supplier Analytics Introduction",
+      "status": "planned"
+    },
+    "01": {
+      "id": null,
+      "title": "Supplier Performance Metrics",
+      "status": "planned"
+    },
+    "02": {
+      "id": null,
+      "title": "Supplier Risk Analysis",
+      "status": "planned"
+    },
+    "03": {
+      "id": null,
+      "title": "Supplier Capacity Planning",
+      "status": "planned"
+    },
+    "04": {
+      "id": null,
+      "title": "Compliance Document Tracking",
+      "status": "planned"
+    },
+    "05": {
+      "id": null,
+      "title": "Raw Materials Quality Analytics",
+      "status": "planned"
+    },
+    "make-intro": {
+      "id": null,
+      "title": "MAKE - Manufacturing Analytics Introduction",
+      "status": "planned"
+    },
+    "06": {
+      "id": null,
+      "title": "Manufacturing Cost Analysis",
+      "status": "planned"
+    },
+    "07": {
+      "id": null,
+      "title": "Production Scheduling",
+      "status": "planned"
+    },
+    "08": {
+      "id": null,
+      "title": "Batch Size Optimization",
+      "status": "planned"
+    },
+    "09": {
+      "id": null,
+      "title": "Predictive Maintenance",
+      "status": "planned"
+    },
+    "10": {
+      "id": null,
+      "title": "AI Quality Assurance",
+      "status": "planned"
+    },
+    "11": {
+      "id": null,
+      "title": "Digital Twin",
+      "status": "planned"
+    },
+    "12": {
+      "id": null,
+      "title": "Overall Equipment Effectiveness",
+      "status": "planned"
+    },
+    "plan-intro": {
+      "id": null,
+      "title": "PLAN - Planning Analytics Introduction",
+      "status": "planned"
+    },
+    "13": {
+      "id": null,
+      "title": "Demand Forecasting",
+      "status": "planned"
+    },
+    "14": {
+      "id": null,
+      "title": "Inventory Optimization",
+      "status": "planned"
+    },
+    "15": {
+      "id": null,
+      "title": "Multi-Echelon Inventory Optimization",
+      "status": "planned"
+    },
+    "16": {
+      "id": null,
+      "title": "Vendor Managed Inventory",
+      "status": "planned"
+    },
+    "17": {
+      "id": null,
+      "title": "Supply Chain Segmentation",
+      "status": "planned"
+    },
+    "18": {
+      "id": null,
+      "title": "Sales & Operations Planning",
+      "status": "planned"
+    },
+    "19": {
+      "id": null,
+      "title": "Supply Chain Risk Analysis",
+      "status": "planned"
+    },
+    "deliver-intro": {
+      "id": null,
+      "title": "DELIVER - Delivery Analytics Introduction",
+      "status": "planned"
+    },
+    "20": {
+      "id": null,
+      "title": "Customer Satisfaction Analysis",
+      "status": "planned"
+    },
+    "21": {
+      "id": null,
+      "title": "Order Fulfillment Analytics",
+      "status": "planned"
+    },
+    "22": {
+      "id": null,
+      "title": "Supply Chain Network Design",
+      "status": "planned"
+    },
+    "23": {
+      "id": null,
+      "title": "Transportation Cost Analysis",
+      "status": "planned"
+    },
+    "24": {
+      "id": null,
+      "title": "Delivery Time Prediction",
+      "status": "planned"
+    },
+    "25": {
+      "id": null,
+      "title": "Delivery Route Optimization",
+      "status": "planned"
+    }
+  },
+  "embed_options": {
+    "modestbranding": 1,
+    "rel": 0,
+    "showinfo": 0
+  }
+}

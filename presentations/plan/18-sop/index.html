@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales & Operations Planning | PLAN | Supply Chain Analytics</title>
+  <link rel="stylesheet" href="../../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../../../assets/css/base.css">
+  <link rel="stylesheet" href="../../../assets/css/theme-plan.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .case-header { display: flex; align-items: center; gap: var(--space-4); justify-content: center; margin-bottom: var(--space-4); }
+    .case-number { display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light)); color: white; font-size: var(--font-size-2xl); font-weight: 700; border-radius: var(--radius-lg); }
+    .process-steps { display: flex; justify-content: center; gap: var(--space-2); margin-top: var(--space-6); flex-wrap: wrap; }
+    .process-step { background: white; padding: var(--space-4); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); text-align: center; min-width: 120px; position: relative; }
+    .process-step::after { content: '→'; position: absolute; right: -18px; top: 50%; transform: translateY(-50%); color: var(--color-primary); font-size: 1.2rem; }
+    .process-step:last-child::after { display: none; }
+    .process-step .step-num { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; background: var(--color-primary); color: white; border-radius: 50%; font-size: var(--font-size-sm); margin-bottom: var(--space-2); }
+    .tower-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-4); margin-top: var(--space-6); }
+    .tower-card { background: white; padding: var(--space-4); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
+    .tower-card h4 { color: var(--color-primary); font-size: var(--font-size-sm); margin-bottom: var(--space-2); }
+    .tower-card ul { font-size: var(--font-size-xs); padding-left: var(--space-4); margin: 0; }
+    .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); margin-top: var(--space-6); text-align: center; }
+    .kpi-card { background: white; padding: var(--space-6); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+    .kpi-icon { font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-3); }
+    .related-links { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-6); }
+    .related-link { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-3) var(--space-5); background: white; border-radius: var(--radius-full); text-decoration: none; color: var(--color-text); box-shadow: var(--shadow-sm); transition: all var(--transition-fast); }
+    .related-link:hover { background: var(--color-primary); color: white; text-decoration: none; }
+    @media (max-width: 768px) { .tower-grid { grid-template-columns: 1fr; } .process-step::after { display: none; } }
+  </style>
+</head>
+<body class="theme-arctic-frost">
+  <div class="presentation">
+    <section class="slide slide--title active">
+      <p style="text-transform: uppercase; letter-spacing: 0.3em; color: var(--color-primary);">PLAN | Supply Chain Analytics</p>
+      <div class="case-header"><span class="case-number">18</span></div>
+      <h1>Sales & Operations Planning</h1>
+      <p style="font-size: var(--font-size-lg); color: var(--color-text-muted); margin-top: var(--space-4);">Aligning demand and supply across the organization</p>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>What Is It?</h2>
+      <div style="max-width: 800px;">
+        <p style="font-size: var(--font-size-lg);">S&OP is a collaborative process aligning sales forecasting with operational planning.</p>
+        <ul style="margin-top: var(--space-6); font-size: var(--font-size-lg);">
+          <li><strong>Strategic alignment</strong> - Long-term goals and capabilities</li>
+          <li><strong>Tactical planning</strong> - Medium-term resource allocation</li>
+          <li><strong>Operational execution</strong> - Short-term activity coordination</li>
+          <li><strong>Cross-functional</strong> - Sales, operations, finance integration</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>S&OP Process</h2>
+      <div class="process-steps">
+        <div class="process-step"><span class="step-num">1</span><p style="font-size: var(--font-size-xs);"><strong>Data Gathering</strong></p></div>
+        <div class="process-step"><span class="step-num">2</span><p style="font-size: var(--font-size-xs);"><strong>Demand Planning</strong></p></div>
+        <div class="process-step"><span class="step-num">3</span><p style="font-size: var(--font-size-xs);"><strong>Supply Planning</strong></p></div>
+        <div class="process-step"><span class="step-num">4</span><p style="font-size: var(--font-size-xs);"><strong>Pre-S&OP</strong></p></div>
+        <div class="process-step"><span class="step-num">5</span><p style="font-size: var(--font-size-xs);"><strong>Executive S&OP</strong></p></div>
+        <div class="process-step"><span class="step-num">6</span><p style="font-size: var(--font-size-xs);"><strong>Implementation</strong></p></div>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Control Tower Data</h2>
+      <div class="tower-grid">
+        <div class="tower-card"><h4><i class="fas fa-chart-line"></i> PLAN</h4><ul><li>Demand forecasts</li><li>Sales plans</li><li>Capacity plans</li></ul></div>
+        <div class="tower-card"><h4><i class="fas fa-truck-loading"></i> SOURCE</h4><ul><li>Supplier performance</li><li>Purchase orders</li><li>Inventory levels</li></ul></div>
+        <div class="tower-card"><h4><i class="fas fa-industry"></i> MAKE</h4><ul><li>Production schedules</li><li>Manufacturing KPIs</li><li>Quality metrics</li></ul></div>
+        <div class="tower-card"><h4><i class="fas fa-shipping-fast"></i> DELIVER</h4><ul><li>Logistics data</li><li>Order fulfillment</li><li>Customer service</li></ul></div>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Key Performance Indicators</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-bullseye"></i></div><h4>Forecast Accuracy</h4><p style="font-size: var(--font-size-sm);">Plan vs actual</p></div>
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-balance-scale"></i></div><h4>Demand/Supply Balance</h4><p style="font-size: var(--font-size-sm);">Alignment metric</p></div>
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-tasks"></i></div><h4>Plan Adherence</h4><p style="font-size: var(--font-size-sm);">Execution accuracy</p></div>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Related Use Cases</h2>
+      <div class="related-links">
+        <a href="../13-demand-forecasting/index.html" class="related-link"><i class="fas fa-chart-line"></i> Demand Forecasting</a>
+        <a href="../19-risk-analysis/index.html" class="related-link"><i class="fas fa-shield-alt"></i> Risk Analysis</a>
+        <a href="../14-inventory-optimization/index.html" class="related-link"><i class="fas fa-boxes"></i> Inventory Optimization</a>
+      </div>
+      <div style="margin-top: var(--space-12); text-align: center;"><a href="../index.html" class="nav-btn"><i class="fas fa-th-large"></i> All PLAN Cases</a></div>
+      <p style="margin-top: var(--space-6); text-align: center;"><a href="../17-segmentation/index.html" style="color: var(--color-primary);"><i class="fas fa-arrow-left"></i> Previous</a> &nbsp;|&nbsp; <a href="../19-risk-analysis/index.html" style="color: var(--color-primary);">Next <i class="fas fa-arrow-right"></i></a></p>
+    </section>
+  </div>
+  <script src="../../../assets/js/navigation.js"></script>
+</body>
+</html>

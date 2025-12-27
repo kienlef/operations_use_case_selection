@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supply Chain Network Design | DELIVER | Supply Chain Analytics</title>
+  <link rel="stylesheet" href="../../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../../../assets/css/base.css">
+  <link rel="stylesheet" href="../../../assets/css/theme-deliver.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .case-header { display: flex; align-items: center; gap: var(--space-4); justify-content: center; margin-bottom: var(--space-4); }
+    .case-number { display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: var(--color-primary); color: white; font-size: var(--font-size-2xl); font-weight: 700; border-radius: var(--radius-sm); }
+    .objective-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-4); margin-top: var(--space-6); }
+    .objective-card { background: white; padding: var(--space-5); border-radius: var(--radius-md); border: 1px solid var(--color-border); border-left: 3px solid var(--color-primary); }
+    .objective-card h4 { color: var(--color-primary); margin-bottom: var(--space-2); font-size: var(--font-size-base); }
+    .method-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); margin-top: var(--space-6); }
+    .method-item { display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-4); background: white; border-radius: var(--radius-md); border: 1px solid var(--color-border); }
+    .method-icon { color: var(--color-primary); font-size: var(--font-size-xl); }
+    .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); margin-top: var(--space-6); text-align: center; }
+    .kpi-card { background: white; padding: var(--space-6); border-radius: var(--radius-md); border: 1px solid var(--color-border); }
+    .kpi-icon { font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-3); }
+    .related-links { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-6); }
+    .related-link { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-3) var(--space-5); background: white; border-radius: var(--radius-sm); text-decoration: none; color: var(--color-text); border: 1px solid var(--color-border); transition: all var(--transition-fast); }
+    .related-link:hover { background: var(--color-primary); color: white; border-color: var(--color-primary); text-decoration: none; }
+  </style>
+</head>
+<body class="theme-modern-minimalist">
+  <div class="presentation">
+    <section class="slide slide--title active">
+      <p style="text-transform: uppercase; letter-spacing: 0.3em; color: var(--color-primary);">DELIVER | Supply Chain Analytics</p>
+      <div class="case-header"><span class="case-number">22</span></div>
+      <h1>Supply Chain Network Design</h1>
+      <p style="font-size: var(--font-size-lg); color: var(--color-text-muted); margin-top: var(--space-4);">Optimizing facility locations and structure</p>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>What Is It?</h2>
+      <div style="max-width: 800px;">
+        <p style="font-size: var(--font-size-lg);">Network Design strategically shapes the supply chain structure for optimal efficiency.</p>
+        <ul style="margin-top: var(--space-6); font-size: var(--font-size-lg);">
+          <li><strong>Location decisions</strong> - Where to place facilities</li>
+          <li><strong>Capacity planning</strong> - How much capacity at each site</li>
+          <li><strong>Flow optimization</strong> - How goods move through network</li>
+          <li><strong>Cost/service balance</strong> - Trade-off optimization</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Business Objectives</h2>
+      <div class="objective-grid">
+        <div class="objective-card"><h4><i class="fas fa-dollar-sign"></i> Cost Efficiency</h4><p style="font-size: var(--font-size-sm);">Reduce transportation, inventory, operations</p></div>
+        <div class="objective-card"><h4><i class="fas fa-clock"></i> Service Level</h4><p style="font-size: var(--font-size-sm);">Improve delivery times</p></div>
+        <div class="objective-card"><h4><i class="fas fa-expand-arrows-alt"></i> Flexibility</h4><p style="font-size: var(--font-size-sm);">Adaptable to change</p></div>
+        <div class="objective-card"><h4><i class="fas fa-shield-alt"></i> Resilience</h4><p style="font-size: var(--font-size-sm);">Continuity against disruptions</p></div>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Analytics Methods</h2>
+      <div class="method-grid">
+        <div class="method-item"><i class="fas fa-project-diagram method-icon"></i><div><strong>Network Analysis</strong><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Visualize flow of goods</p></div></div>
+        <div class="method-item"><i class="fas fa-desktop method-icon"></i><div><strong>Simulation</strong><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Test under stochastic conditions</p></div></div>
+        <div class="method-item"><i class="fas fa-code-branch method-icon"></i><div><strong>Scenario Analysis</strong><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">What-if evaluation</p></div></div>
+        <div class="method-item"><i class="fas fa-calculator method-icon"></i><div><strong>Mixed Integer Programming</strong><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Optimize locations</p></div></div>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Key Performance Indicators</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-coins"></i></div><h4>Total SC Cost</h4><p style="font-size: var(--font-size-sm);">Production + storage + transport</p></div>
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-leaf"></i></div><h4>Carbon Footprint</h4><p style="font-size: var(--font-size-sm);">Environmental impact</p></div>
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-sync-alt"></i></div><h4>Flexibility</h4><p style="font-size: var(--font-size-sm);">Adaptability score</p></div>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Related Use Cases</h2>
+      <div class="related-links">
+        <a href="../23-transportation-cost/index.html" class="related-link"><i class="fas fa-truck"></i> Transportation Cost</a>
+        <a href="../../plan/15-multi-echelon/index.html" class="related-link"><i class="fas fa-layer-group"></i> Multi-Echelon</a>
+        <a href="../../plan/19-risk-analysis/index.html" class="related-link"><i class="fas fa-shield-alt"></i> Risk Analysis</a>
+      </div>
+      <div style="margin-top: var(--space-12); text-align: center;"><a href="../index.html" class="nav-btn"><i class="fas fa-th-large"></i> All DELIVER Cases</a></div>
+      <p style="margin-top: var(--space-6); text-align: center;"><a href="../21-order-fulfillment/index.html" style="color: var(--color-primary);"><i class="fas fa-arrow-left"></i> Previous</a> &nbsp;|&nbsp; <a href="../23-transportation-cost/index.html" style="color: var(--color-primary);">Next <i class="fas fa-arrow-right"></i></a></p>
+    </section>
+  </div>
+  <script src="../../../assets/js/navigation.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demand Forecasting | PLAN | Supply Chain Analytics</title>
+  
+  <link rel="stylesheet" href="../../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../../../assets/css/base.css">
+  <link rel="stylesheet" href="../../../assets/css/theme-plan.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    .case-header { display: flex; align-items: center; gap: var(--space-4); justify-content: center; margin-bottom: var(--space-4); }
+    .case-number { display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light)); color: white; font-size: var(--font-size-2xl); font-weight: 700; border-radius: var(--radius-lg); }
+    .objective-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-4); margin-top: var(--space-6); }
+    .objective-card { background: white; padding: var(--space-5); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border-top: 3px solid var(--color-primary); }
+    .objective-card h4 { color: var(--color-primary); margin-bottom: var(--space-2); font-size: var(--font-size-base); }
+    .forecast-layers { margin-top: var(--space-6); }
+    .forecast-layer { display: flex; align-items: center; gap: var(--space-4); padding: var(--space-4); background: white; margin-bottom: var(--space-3); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
+    .layer-icon { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: var(--radius-md); color: white; }
+    .method-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); margin-top: var(--space-6); }
+    .method-item { display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-4); background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
+    .method-icon { color: var(--color-primary); font-size: var(--font-size-xl); }
+    .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); margin-top: var(--space-6); text-align: center; }
+    .kpi-card { background: white; padding: var(--space-6); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+    .kpi-icon { font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-3); }
+    .related-links { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-6); }
+    .related-link { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-3) var(--space-5); background: white; border-radius: var(--radius-full); text-decoration: none; color: var(--color-text); box-shadow: var(--shadow-sm); transition: all var(--transition-fast); }
+    .related-link:hover { background: var(--color-primary); color: white; text-decoration: none; }
+    @media (max-width: 768px) { .objective-grid, .method-grid, .kpi-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body class="theme-arctic-frost">
+  <div class="presentation">
+    
+    <!-- Slide 1: Title -->
+    <section class="slide slide--title active">
+      <p style="text-transform: uppercase; letter-spacing: 0.3em; color: var(--color-primary); margin-bottom: var(--space-2);">
+        PLAN | Supply Chain Analytics
+      </p>
+      <div class="case-header">
+        <span class="case-number">13</span>
+      </div>
+      <h1>Demand Forecasting</h1>
+      <p style="font-size: var(--font-size-lg); color: var(--color-text-muted); margin-top: var(--space-4);">
+        Predicting future customer demand
+      </p>
+    </section>
+    
+    <!-- Slide 2: What Is It -->
+    <section class="slide slide--content">
+      <h2>What Is It?</h2>
+      <div style="max-width: 800px;">
+        <p style="font-size: var(--font-size-lg);">
+          Demand Forecasting uses historical data, statistical algorithms, and market analysis to predict future customer demand.
+        </p>
+        <ul style="margin-top: var(--space-6); font-size: var(--font-size-lg);">
+          <li><strong>Historical analysis</strong> - Past sales data, trends, and patterns</li>
+          <li><strong>External factors</strong> - Market conditions, seasonality, promotions</li>
+          <li><strong>Quantity estimation</strong> - Products/services consumers will purchase</li>
+          <li><strong>Decision support</strong> - Inventory, production, and sales strategies</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Slide 3: Business Objectives -->
+    <section class="slide slide--content">
+      <h2>Business Objectives</h2>
+      <div class="objective-grid">
+        <div class="objective-card">
+          <h4><i class="fas fa-boxes"></i> Inventory Optimization</h4>
+          <p style="font-size: var(--font-size-sm);">Balance stock without overstocking or stockouts</p>
+        </div>
+        <div class="objective-card">
+          <h4><i class="fas fa-users-cog"></i> Resource Allocation</h4>
+          <p style="font-size: var(--font-size-sm);">Efficient workforce and capacity planning</p>
+        </div>
+        <div class="objective-card">
+          <h4><i class="fas fa-dollar-sign"></i> Cost Reduction</h4>
+          <p style="font-size: var(--font-size-sm);">Minimize excess inventory and lost sales</p>
+        </div>
+        <div class="objective-card">
+          <h4><i class="fas fa-smile"></i> Customer Satisfaction</h4>
+          <p style="font-size: var(--font-size-sm);">Ensure product availability</p>
+        </div>
+        <div class="objective-card">
+          <h4><i class="fas fa-trophy"></i> Competitive Advantage</h4>
+          <p style="font-size: var(--font-size-sm);">Anticipate customer needs better</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 4: Forecasting Layers -->
+    <section class="slide slide--content">
+      <h2>Forecasting Layers in Planning</h2>
+      <div class="forecast-layers">
+        <div class="forecast-layer">
+          <div class="layer-icon" style="background: #1a237e;"><i class="fas fa-chess"></i></div>
+          <div>
+            <strong>Strategic (Long-term)</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Network planning, capacity investments</p>
+          </div>
+        </div>
+        <div class="forecast-layer">
+          <div class="layer-icon" style="background: #303f9f;"><i class="fas fa-calendar-alt"></i></div>
+          <div>
+            <strong>Tactical (Mid-term)</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Master planning, procurement</p>
+          </div>
+        </div>
+        <div class="forecast-layer">
+          <div class="layer-icon" style="background: #3f51b5;"><i class="fas fa-tasks"></i></div>
+          <div>
+            <strong>Operational (Short-term)</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Production and distribution scheduling</p>
+          </div>
+        </div>
+        <div class="forecast-layer">
+          <div class="layer-icon" style="background: #7986cb;"><i class="fas fa-clock"></i></div>
+          <div>
+            <strong>Real-time</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Consolidated orders, immediate adjustments</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 5: Univariate vs Multivariate -->
+    <section class="slide slide--content">
+      <h2>Forecasting Approaches</h2>
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-8); margin-top: var(--space-6);">
+        <div class="card">
+          <h3 style="color: var(--color-primary);"><i class="fas fa-chart-line"></i> Univariate</h3>
+          <p>Single variable over time as input</p>
+          <ul style="font-size: var(--font-size-sm); margin-top: var(--space-4);">
+            <li>Sales data of one product</li>
+            <li>Classical time series methods</li>
+            <li>ARIMA, Exponential Smoothing</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="color: var(--color-primary);"><i class="fas fa-project-diagram"></i> Multivariate</h3>
+          <p>Multiple input variables considered</p>
+          <ul style="font-size: var(--font-size-sm); margin-top: var(--space-4);">
+            <li>Sales + promotions + price + weather</li>
+            <li>Machine learning approaches</li>
+            <li>Random Forests, Neural Networks</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 6: Analytics Methods -->
+    <section class="slide slide--content">
+      <h2>Analytics Methods</h2>
+      <div class="method-grid">
+        <div class="method-item">
+          <i class="fas fa-chart-area method-icon"></i>
+          <div>
+            <strong>ARIMA</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Capture trends and seasonal effects</p>
+          </div>
+        </div>
+        <div class="method-item">
+          <i class="fas fa-tree method-icon"></i>
+          <div>
+            <strong>Machine Learning</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Random Forests, Gradient Boosting</p>
+          </div>
+        </div>
+        <div class="method-item">
+          <i class="fas fa-brain method-icon"></i>
+          <div>
+            <strong>Deep Learning</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">RNN, LSTM for sequential patterns</p>
+          </div>
+        </div>
+        <div class="method-item">
+          <i class="fab fa-facebook method-icon"></i>
+          <div>
+            <strong>Facebook Prophet</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Open-source tool for seasonality</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 7: KPIs -->
+    <section class="slide slide--content">
+      <h2>Key Performance Indicators</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fas fa-bullseye"></i></div>
+          <h4>Forecast Accuracy</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">MAPE, RMSE metrics</p>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fas fa-warehouse"></i></div>
+          <h4>Inventory Levels</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Optimal stock management</p>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fas fa-exclamation-triangle"></i></div>
+          <h4>Stockout Rate</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Reduce out-of-stock events</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 8: Related Cases -->
+    <section class="slide slide--content">
+      <h2>Related Use Cases</h2>
+      <div class="related-links">
+        <a href="../14-inventory-optimization/index.html" class="related-link">
+          <i class="fas fa-boxes"></i> Inventory Optimization
+        </a>
+        <a href="../18-sop/index.html" class="related-link">
+          <i class="fas fa-handshake"></i> Sales & Operations Planning
+        </a>
+        <a href="../16-vmi/index.html" class="related-link">
+          <i class="fas fa-truck-loading"></i> Vendor Managed Inventory
+        </a>
+      </div>
+      <div style="margin-top: var(--space-12); text-align: center;">
+        <a href="../index.html" class="nav-btn">
+          <i class="fas fa-th-large"></i> All PLAN Cases
+        </a>
+      </div>
+      <p style="margin-top: var(--space-6); text-align: center;">
+        <a href="../../make/12-oee/index.html" style="color: var(--color-primary);">
+          <i class="fas fa-arrow-left"></i> Previous: OEE
+        </a>
+        &nbsp;|&nbsp;
+        <a href="../14-inventory-optimization/index.html" style="color: var(--color-primary);">
+          Next: Inventory Optimization <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </section>
+    
+  </div>
+  
+  <script src="../../../assets/js/navigation.js"></script>
+</body>
+</html>

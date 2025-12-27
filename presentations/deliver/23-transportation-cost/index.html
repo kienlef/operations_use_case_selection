@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transportation Cost Analysis | DELIVER | Supply Chain Analytics</title>
+  <link rel="stylesheet" href="../../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../../../assets/css/base.css">
+  <link rel="stylesheet" href="../../../assets/css/theme-deliver.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .case-header { display: flex; align-items: center; gap: var(--space-4); justify-content: center; margin-bottom: var(--space-4); }
+    .case-number { display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: var(--color-primary); color: white; font-size: var(--font-size-2xl); font-weight: 700; border-radius: var(--radius-sm); }
+    .mode-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--space-3); margin-top: var(--space-6); }
+    .mode-card { background: white; padding: var(--space-4); border-radius: var(--radius-md); border: 1px solid var(--color-border); text-align: center; }
+    .mode-card i { font-size: 2rem; color: var(--color-primary); margin-bottom: var(--space-2); }
+    .mode-card h4 { font-size: var(--font-size-sm); margin-bottom: var(--space-1); }
+    .method-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); margin-top: var(--space-6); }
+    .method-item { display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-4); background: white; border-radius: var(--radius-md); border: 1px solid var(--color-border); }
+    .method-icon { color: var(--color-primary); font-size: var(--font-size-xl); }
+    .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-4); margin-top: var(--space-6); text-align: center; }
+    .kpi-card { background: white; padding: var(--space-4); border-radius: var(--radius-md); border: 1px solid var(--color-border); }
+    .kpi-icon { font-size: 2rem; color: var(--color-primary); margin-bottom: var(--space-2); }
+    .related-links { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-6); }
+    .related-link { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-3) var(--space-5); background: white; border-radius: var(--radius-sm); text-decoration: none; color: var(--color-text); border: 1px solid var(--color-border); transition: all var(--transition-fast); }
+    .related-link:hover { background: var(--color-primary); color: white; border-color: var(--color-primary); text-decoration: none; }
+    @media (max-width: 768px) { .mode-grid, .kpi-grid { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+</head>
+<body class="theme-modern-minimalist">
+  <div class="presentation">
+    <section class="slide slide--title active">
+      <p style="text-transform: uppercase; letter-spacing: 0.3em; color: var(--color-primary);">DELIVER | Supply Chain Analytics</p>
+      <div class="case-header"><span class="case-number">23</span></div>
+      <h1>Transportation Cost Analysis</h1>
+      <p style="font-size: var(--font-size-lg); color: var(--color-text-muted); margin-top: var(--space-4);">Mode optimization and cost reduction</p>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>What Is It?</h2>
+      <div style="max-width: 800px;">
+        <p style="font-size: var(--font-size-lg);">Transportation Cost Analysis optimizes costs of moving goods through the supply chain.</p>
+        <ul style="margin-top: var(--space-6); font-size: var(--font-size-lg);">
+          <li><strong>Mode selection</strong> - Choose optimal transport type</li>
+          <li><strong>Route optimization</strong> - Find best paths</li>
+          <li><strong>Consolidation</strong> - Combine shipments</li>
+          <li><strong>Cost trade-offs</strong> - Balance cost vs speed</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Transportation Modes</h2>
+      <div class="mode-grid">
+        <div class="mode-card"><i class="fas fa-plane"></i><h4>Air</h4><p style="font-size: var(--font-size-xs);">Fastest, highest cost</p></div>
+        <div class="mode-card"><i class="fas fa-truck"></i><h4>Road</h4><p style="font-size: var(--font-size-xs);">Flexible, door-to-door</p></div>
+        <div class="mode-card"><i class="fas fa-train"></i><h4>Rail</h4><p style="font-size: var(--font-size-xs);">Bulk, cost-effective</p></div>
+        <div class="mode-card"><i class="fas fa-ship"></i><h4>Sea</h4><p style="font-size: var(--font-size-xs);">Lowest cost, slowest</p></div>
+        <div class="mode-card"><i class="fas fa-random"></i><h4>Intermodal</h4><p style="font-size: var(--font-size-xs);">Combined modes</p></div>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Analytics Methods</h2>
+      <div class="method-grid">
+        <div class="method-item"><i class="fas fa-calculator method-icon"></i><div><strong>Linear Programming</strong><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Optimize mode/route selection</p></div></div>
+        <div class="method-item"><i class="fas fa-project-diagram method-icon"></i><div><strong>Network Flow</strong><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Analyze transport networks</p></div></div>
+        <div class="method-item"><i class="fas fa-desktop method-icon"></i><div><strong>Simulation</strong><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Evaluate scenarios</p></div></div>
+        <div class="method-item"><i class="fas fa-balance-scale method-icon"></i><div><strong>Cost-Benefit Analysis</strong><p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Compare options</p></div></div>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Key Performance Indicators</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-box"></i></div><h4>Cost/Unit</h4><p style="font-size: var(--font-size-xs);">Per unit shipped</p></div>
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-road"></i></div><h4>Cost/Mile</h4><p style="font-size: var(--font-size-xs);">Per distance</p></div>
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-percentage"></i></div><h4>Freight % Rev</h4><p style="font-size: var(--font-size-xs);">vs Sales</p></div>
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-clock"></i></div><h4>On-Time %</h4><p style="font-size: var(--font-size-xs);">Service level</p></div>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Related Use Cases</h2>
+      <div class="related-links">
+        <a href="../25-route-optimization/index.html" class="related-link"><i class="fas fa-route"></i> Route Optimization</a>
+        <a href="../22-network-design/index.html" class="related-link"><i class="fas fa-network-wired"></i> Network Design</a>
+        <a href="../24-delivery-time/index.html" class="related-link"><i class="fas fa-clock"></i> Delivery Prediction</a>
+      </div>
+      <div style="margin-top: var(--space-12); text-align: center;"><a href="../index.html" class="nav-btn"><i class="fas fa-th-large"></i> All DELIVER Cases</a></div>
+      <p style="margin-top: var(--space-6); text-align: center;"><a href="../22-network-design/index.html" style="color: var(--color-primary);"><i class="fas fa-arrow-left"></i> Previous</a> &nbsp;|&nbsp; <a href="../24-delivery-time/index.html" style="color: var(--color-primary);">Next <i class="fas fa-arrow-right"></i></a></p>
+    </section>
+  </div>
+  <script src="../../../assets/js/navigation.js"></script>
+</body>
+</html>

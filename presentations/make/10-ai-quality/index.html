@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Quality Assurance | MAKE | Supply Chain Analytics</title>
+  
+  <link rel="stylesheet" href="../../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../../../assets/css/base.css">
+  <link rel="stylesheet" href="../../../assets/css/theme-make.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    .case-header { display: flex; align-items: center; gap: var(--space-4); justify-content: center; margin-bottom: var(--space-4); }
+    .case-number { display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); color: var(--color-bg); font-size: var(--font-size-2xl); font-weight: 700; border-radius: var(--radius-lg); }
+    .objective-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); margin-top: var(--space-6); }
+    .objective-card { background: var(--color-bg-alt); padding: var(--space-6); border-radius: var(--radius-md); border-left: 4px solid var(--color-primary); }
+    .objective-card h3 { color: var(--color-accent); margin-bottom: var(--space-2); font-size: var(--font-size-lg); }
+    .apps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); margin-top: var(--space-6); }
+    .app-card { background: var(--color-bg-alt); padding: var(--space-4); border-radius: var(--radius-md); text-align: center; border: 1px solid var(--color-border); }
+    .app-card i { font-size: 2rem; color: var(--color-accent); margin-bottom: var(--space-2); }
+    .app-card h4 { font-size: var(--font-size-sm); color: var(--color-text); }
+    .method-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); margin-top: var(--space-6); }
+    .method-item { display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-4); background: var(--color-bg-alt); border-radius: var(--radius-md); border: 1px solid var(--color-border); }
+    .method-icon { color: var(--color-accent); font-size: var(--font-size-xl); margin-top: 2px; }
+    .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); margin-top: var(--space-6); text-align: center; }
+    .kpi-card { background: var(--color-bg-alt); padding: var(--space-6); border-radius: var(--radius-lg); border: 1px solid var(--color-border); }
+    .kpi-icon { font-size: 2.5rem; color: var(--color-accent); margin-bottom: var(--space-3); }
+    .case-study { background: linear-gradient(135deg, var(--color-primary), var(--color-bg-alt)); padding: var(--space-6); border-radius: var(--radius-lg); margin-top: var(--space-6); }
+    .related-links { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-6); }
+    .related-link { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-3) var(--space-5); background: var(--color-bg-alt); border-radius: var(--radius-full); text-decoration: none; color: var(--color-text); border: 1px solid var(--color-border); transition: all var(--transition-fast); }
+    .related-link:hover { background: var(--color-primary); border-color: var(--color-primary); text-decoration: none; }
+    .highlight { color: var(--color-accent); text-shadow: 0 0 10px var(--color-accent); }
+    @media (max-width: 768px) { .objective-grid, .apps-grid, .method-grid, .kpi-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body class="theme-tech-innovation">
+  <div class="presentation">
+    
+    <!-- Slide 1: Title -->
+    <section class="slide slide--title active">
+      <p style="text-transform: uppercase; letter-spacing: 0.3em; color: var(--color-accent); margin-bottom: var(--space-2);">
+        MAKE | Supply Chain Analytics
+      </p>
+      <div class="case-header">
+        <span class="case-number">10</span>
+      </div>
+      <h1>AI Quality Assurance</h1>
+      <p style="font-size: var(--font-size-lg); color: var(--color-text-muted); margin-top: var(--space-4);">
+        <span class="highlight">Computer Vision</span> for defect detection
+      </p>
+    </section>
+    
+    <!-- Slide 2: What Is It -->
+    <section class="slide slide--content">
+      <h2>What Is It?</h2>
+      <div style="max-width: 800px;">
+        <p style="font-size: var(--font-size-lg);">
+          Machine Learning in Quality Control applies AI algorithms to monitor, analyze, and improve product quality in manufacturing.
+        </p>
+        <ul style="margin-top: var(--space-6); font-size: var(--font-size-lg);">
+          <li><strong>Pattern identification</strong> - Learning from historical quality data</li>
+          <li><strong>Anomaly detection</strong> - Spotting defects automatically</li>
+          <li><strong>Predictive quality</strong> - Anticipating issues before they occur</li>
+          <li><strong>Reduced manual inspection</strong> - Automation of quality checks</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Slide 3: Business Objectives -->
+    <section class="slide slide--content">
+      <h2>Business Objectives</h2>
+      <div class="objective-grid">
+        <div class="objective-card">
+          <h3><i class="fas fa-medal"></i> Enhanced Quality</h3>
+          <p>Higher standard of product quality through precise AI-driven inspections.</p>
+        </div>
+        <div class="objective-card">
+          <h3><i class="fas fa-dollar-sign"></i> Cost Reduction</h3>
+          <p>Reduce costs from defects, recalls, and manual inspection labor.</p>
+        </div>
+        <div class="objective-card">
+          <h3><i class="fas fa-tachometer-alt"></i> Efficiency</h3>
+          <p>Streamline quality control for faster production cycles.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 4: Computer Vision Applications -->
+    <section class="slide slide--content">
+      <h2>Computer Vision Applications</h2>
+      <div class="apps-grid">
+        <div class="app-card">
+          <i class="fas fa-robot"></i>
+          <h4>Vision-Guided Robots</h4>
+          <p style="font-size: var(--font-size-xs); color: var(--color-text-muted);">Precise positioning for pick & place</p>
+        </div>
+        <div class="app-card">
+          <i class="fas fa-search"></i>
+          <h4>Anomaly Detection</h4>
+          <p style="font-size: var(--font-size-xs); color: var(--color-text-muted);">Identify irregularities in products</p>
+        </div>
+        <div class="app-card">
+          <i class="fas fa-bug"></i>
+          <h4>Defect Detection</h4>
+          <p style="font-size: var(--font-size-xs); color: var(--color-text-muted);">Automated inspection on production lines</p>
+        </div>
+        <div class="app-card">
+          <i class="fas fa-box"></i>
+          <h4>Packaging Inspection</h4>
+          <p style="font-size: var(--font-size-xs); color: var(--color-text-muted);">Check color, size, integrity</p>
+        </div>
+        <div class="app-card">
+          <i class="fas fa-barcode"></i>
+          <h4>Barcode Scanning</h4>
+          <p style="font-size: var(--font-size-xs); color: var(--color-text-muted);">Large-scale label verification</p>
+        </div>
+        <div class="app-card">
+          <i class="fas fa-hard-hat"></i>
+          <h4>Safety Monitoring</h4>
+          <p style="font-size: var(--font-size-xs); color: var(--color-text-muted);">PPE compliance & hazard detection</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 5: Case Example -->
+    <section class="slide slide--content">
+      <h2>Case Example: Microchip Inspection</h2>
+      <div class="case-study">
+        <div style="display: flex; align-items: center; gap: var(--space-6);">
+          <i class="fas fa-microchip" style="font-size: 4rem; color: var(--color-accent);"></i>
+          <div>
+            <h3 style="color: var(--color-accent);">CNN for Microchip Quality</h3>
+            <p>Convolutional Neural Networks designed to quickly and accurately find problems in microchips using sound wave images.</p>
+            <p style="margin-top: var(--space-4); color: var(--color-text-muted);">
+              This ML application is more efficient and accurate than previous methods, representing a significant step in using advanced technology for quality assurance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 6: Analytics Methods -->
+    <section class="slide slide--content">
+      <h2>Analytics Methods</h2>
+      <div class="method-grid">
+        <div class="method-item">
+          <i class="fas fa-layer-group method-icon"></i>
+          <div>
+            <strong>Image Classification (CNNs)</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Automatically identify defects from product images</p>
+          </div>
+        </div>
+        <div class="method-item">
+          <i class="fas fa-object-group method-icon"></i>
+          <div>
+            <strong>Image Segmentation</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Localize defects by distinguishing parts within images</p>
+          </div>
+        </div>
+        <div class="method-item">
+          <i class="fas fa-compress-arrows-alt method-icon"></i>
+          <div>
+            <strong>Autoencoders</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Anomaly detection via reconstruction errors</p>
+          </div>
+        </div>
+        <div class="method-item">
+          <i class="fas fa-exchange-alt method-icon"></i>
+          <div>
+            <strong>Transfer Learning</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Leverage pre-trained models with limited data</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 7: KPIs -->
+    <section class="slide slide--content">
+      <h2>Key Performance Indicators</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fas fa-times-circle"></i></div>
+          <h4>Defect Rate</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">% failing quality standards</p>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fas fa-bullseye"></i></div>
+          <h4>Detection Accuracy</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">ML model precision in identifying defects</p>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fas fa-check-double"></i></div>
+          <h4>Quality Yield</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Products meeting criteria without rework</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 8: Related Cases -->
+    <section class="slide slide--content">
+      <h2>Related Use Cases</h2>
+      <div class="related-links">
+        <a href="../../source/05-raw-materials-quality/index.html" class="related-link">
+          <i class="fas fa-flask"></i> Raw Materials Quality
+        </a>
+        <a href="../12-oee/index.html" class="related-link">
+          <i class="fas fa-tachometer-alt"></i> Overall Equipment Effectiveness
+        </a>
+        <a href="../11-digital-twin/index.html" class="related-link">
+          <i class="fas fa-clone"></i> Digital Twin
+        </a>
+      </div>
+      <div style="margin-top: var(--space-12); text-align: center;">
+        <a href="../index.html" class="nav-btn">
+          <i class="fas fa-th-large"></i> All MAKE Cases
+        </a>
+      </div>
+      <p style="margin-top: var(--space-6); text-align: center;">
+        <a href="../09-predictive-maintenance/index.html" style="color: var(--color-accent);">
+          <i class="fas fa-arrow-left"></i> Previous
+        </a>
+        &nbsp;|&nbsp;
+        <a href="../11-digital-twin/index.html" style="color: var(--color-accent);">
+          Next: Digital Twin <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </section>
+    
+  </div>
+  
+  <script src="../../../assets/js/navigation.js"></script>
+</body>
+</html>

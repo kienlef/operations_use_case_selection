@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predictive Maintenance | MAKE | Supply Chain Analytics</title>
+  
+  <link rel="stylesheet" href="../../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../../../assets/css/base.css">
+  <link rel="stylesheet" href="../../../assets/css/theme-make.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    .case-header { display: flex; align-items: center; gap: var(--space-4); justify-content: center; margin-bottom: var(--space-4); }
+    .case-number { display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); color: var(--color-bg); font-size: var(--font-size-2xl); font-weight: 700; border-radius: var(--radius-lg); }
+    .objective-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); margin-top: var(--space-6); }
+    .objective-card { background: var(--color-bg-alt); padding: var(--space-6); border-radius: var(--radius-md); border-left: 4px solid var(--color-primary); }
+    .objective-card h3 { color: var(--color-accent); margin-bottom: var(--space-2); font-size: var(--font-size-lg); }
+    .maturity-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-4); margin-top: var(--space-6); }
+    .maturity-card { background: var(--color-bg-alt); padding: var(--space-4); border-radius: var(--radius-md); text-align: center; border: 1px solid var(--color-border); }
+    .maturity-card.active { border-color: var(--color-accent); box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); }
+    .maturity-card h4 { color: var(--color-accent); font-size: var(--font-size-sm); }
+    .pf-curve { background: var(--color-bg-alt); padding: var(--space-6); border-radius: var(--radius-lg); margin-top: var(--space-6); border: 1px solid var(--color-border); }
+    .method-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); margin-top: var(--space-6); }
+    .method-item { display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-4); background: var(--color-bg-alt); border-radius: var(--radius-md); border: 1px solid var(--color-border); }
+    .method-icon { color: var(--color-accent); font-size: var(--font-size-xl); margin-top: 2px; }
+    .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); margin-top: var(--space-6); text-align: center; }
+    .kpi-card { background: var(--color-bg-alt); padding: var(--space-6); border-radius: var(--radius-lg); border: 1px solid var(--color-border); }
+    .kpi-icon { font-size: 2.5rem; color: var(--color-accent); margin-bottom: var(--space-3); }
+    .related-links { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-6); }
+    .related-link { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-3) var(--space-5); background: var(--color-bg-alt); border-radius: var(--radius-full); text-decoration: none; color: var(--color-text); border: 1px solid var(--color-border); transition: all var(--transition-fast); }
+    .related-link:hover { background: var(--color-primary); border-color: var(--color-primary); text-decoration: none; }
+    .highlight { color: var(--color-accent); text-shadow: 0 0 10px var(--color-accent); }
+    @media (max-width: 768px) { .objective-grid, .maturity-grid, .method-grid, .kpi-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body class="theme-tech-innovation">
+  <div class="presentation">
+    
+    <!-- Slide 1: Title -->
+    <section class="slide slide--title active">
+      <p style="text-transform: uppercase; letter-spacing: 0.3em; color: var(--color-accent); margin-bottom: var(--space-2);">
+        MAKE | Supply Chain Analytics
+      </p>
+      <div class="case-header">
+        <span class="case-number">09</span>
+      </div>
+      <h1>Predictive Maintenance</h1>
+      <p style="font-size: var(--font-size-lg); color: var(--color-text-muted); margin-top: var(--space-4);">
+        <span class="highlight">ML-powered</span> equipment failure prevention
+      </p>
+    </section>
+    
+    <!-- Slide 2: What Is It -->
+    <section class="slide slide--content">
+      <h2>What Is It?</h2>
+      <div style="max-width: 800px;">
+        <p style="font-size: var(--font-size-lg);">
+          Predictive Maintenance (PdM) uses data analytics and machine learning to predict equipment failures before they occur.
+        </p>
+        <ul style="margin-top: var(--space-6); font-size: var(--font-size-lg);">
+          <li><strong>Real-time monitoring</strong> - Continuous equipment health tracking</li>
+          <li><strong>Historical analysis</strong> - Learning from past failure patterns</li>
+          <li><strong>Pattern recognition</strong> - Identifying early warning signals</li>
+          <li><strong>Proactive scheduling</strong> - Maintenance based on actual condition</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Slide 3: Business Objectives -->
+    <section class="slide slide--content">
+      <h2>Business Objectives</h2>
+      <div class="objective-grid">
+        <div class="objective-card">
+          <h3><i class="fas fa-power-off"></i> Reduce Downtime</h3>
+          <p>Minimize unplanned equipment outages that cause costly production delays.</p>
+        </div>
+        <div class="objective-card">
+          <h3><i class="fas fa-cog"></i> Extend Equipment Life</h3>
+          <p>Optimize maintenance to extend operational lifespan of assets.</p>
+        </div>
+        <div class="objective-card">
+          <h3><i class="fas fa-dollar-sign"></i> Cost Efficiency</h3>
+          <p>Lower maintenance costs by performing maintenance only when needed.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 4: Maturity Levels -->
+    <section class="slide slide--content">
+      <h2>Maintenance Maturity Levels</h2>
+      <div class="maturity-grid">
+        <div class="maturity-card">
+          <div style="font-size: 2rem; margin-bottom: var(--space-2);">1️⃣</div>
+          <h4>Reactive</h4>
+          <p style="font-size: var(--font-size-xs);">Fix when broken</p>
+        </div>
+        <div class="maturity-card">
+          <div style="font-size: 2rem; margin-bottom: var(--space-2);">2️⃣</div>
+          <h4>Preventive</h4>
+          <p style="font-size: var(--font-size-xs);">Scheduled maintenance</p>
+        </div>
+        <div class="maturity-card">
+          <div style="font-size: 2rem; margin-bottom: var(--space-2);">3️⃣</div>
+          <h4>Condition-based</h4>
+          <p style="font-size: var(--font-size-xs);">Monitor and respond</p>
+        </div>
+        <div class="maturity-card active">
+          <div style="font-size: 2rem; margin-bottom: var(--space-2);">4️⃣</div>
+          <h4>Predictive</h4>
+          <p style="font-size: var(--font-size-xs);">Predict and prevent</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 5: P-F Curve -->
+    <section class="slide slide--content">
+      <h2>The P-F Curve</h2>
+      <div class="pf-curve">
+        <p style="margin-bottom: var(--space-4);">The relationship between Potential Failure and Functional Failure:</p>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-6);">
+          <div>
+            <h4 style="color: var(--color-primary);"><i class="fas fa-exclamation-triangle"></i> Potential Failure (P)</h4>
+            <p>Equipment begins showing signs of degradation - detectable through sensors and monitoring.</p>
+          </div>
+          <div>
+            <h4 style="color: #ff4444;"><i class="fas fa-times-circle"></i> Functional Failure (F)</h4>
+            <p>Equipment can no longer perform its intended function - production stops.</p>
+          </div>
+        </div>
+        <p style="margin-top: var(--space-4); text-align: center; color: var(--color-accent);">
+          <strong>P-F Interval:</strong> The window for predictive maintenance to prevent failure
+        </p>
+      </div>
+    </section>
+    
+    <!-- Slide 6: Analytics Methods -->
+    <section class="slide slide--content">
+      <h2>Analytics Methods</h2>
+      <div class="method-grid">
+        <div class="method-item">
+          <i class="fas fa-chart-line method-icon"></i>
+          <div>
+            <strong>Anomaly Detection</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Z-score or Grubbs' test to identify outliers in performance</p>
+          </div>
+        </div>
+        <div class="method-item">
+          <i class="fas fa-brain method-icon"></i>
+          <div>
+            <strong>Machine Learning</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Random Forests, SVMs for pattern recognition and failure prediction</p>
+          </div>
+        </div>
+        <div class="method-item">
+          <i class="fas fa-network-wired method-icon"></i>
+          <div>
+            <strong>LSTM Networks</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Time-series forecasting for equipment health trends</p>
+          </div>
+        </div>
+        <div class="method-item">
+          <i class="fas fa-hourglass-half method-icon"></i>
+          <div>
+            <strong>Survival Analysis</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Estimating time until equipment failure</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 7: KPIs -->
+    <section class="slide slide--content">
+      <h2>Key Performance Indicators</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fas fa-clock"></i></div>
+          <h4>MTBF</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Mean Time Between Failures</p>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fas fa-coins"></i></div>
+          <h4>Maintenance Cost</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Reduction in maintenance expenses</p>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fas fa-check-circle"></i></div>
+          <h4>Equipment Uptime</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">% of operational time</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 8: Related Cases -->
+    <section class="slide slide--content">
+      <h2>Related Use Cases</h2>
+      <div class="related-links">
+        <a href="../12-oee/index.html" class="related-link">
+          <i class="fas fa-tachometer-alt"></i> Overall Equipment Effectiveness
+        </a>
+        <a href="../11-digital-twin/index.html" class="related-link">
+          <i class="fas fa-clone"></i> Digital Twin
+        </a>
+        <a href="../07-production-scheduling/index.html" class="related-link">
+          <i class="fas fa-calendar-alt"></i> Production Scheduling
+        </a>
+      </div>
+      <div style="margin-top: var(--space-12); text-align: center;">
+        <a href="../index.html" class="nav-btn">
+          <i class="fas fa-th-large"></i> All MAKE Cases
+        </a>
+      </div>
+      <p style="margin-top: var(--space-6); text-align: center;">
+        <a href="../08-batch-size/index.html" style="color: var(--color-accent);">
+          <i class="fas fa-arrow-left"></i> Previous
+        </a>
+        &nbsp;|&nbsp;
+        <a href="../10-ai-quality/index.html" style="color: var(--color-accent);">
+          Next: AI Quality Assurance <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </section>
+    
+  </div>
+  
+  <script src="../../../assets/js/navigation.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Fulfillment Analytics | DELIVER | Supply Chain Analytics</title>
+  <link rel="stylesheet" href="../../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../../../assets/css/base.css">
+  <link rel="stylesheet" href="../../../assets/css/theme-deliver.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .case-header { display: flex; align-items: center; gap: var(--space-4); justify-content: center; margin-bottom: var(--space-4); }
+    .case-number { display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: var(--color-primary); color: white; font-size: var(--font-size-2xl); font-weight: 700; border-radius: var(--radius-sm); }
+    .failure-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); margin-top: var(--space-6); }
+    .failure-card { background: white; padding: var(--space-4); border-radius: var(--radius-md); border: 1px solid var(--color-border); }
+    .failure-card h4 { color: var(--color-primary); font-size: var(--font-size-sm); margin-bottom: var(--space-2); }
+    .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-4); margin-top: var(--space-6); text-align: center; }
+    .kpi-card { background: white; padding: var(--space-4); border-radius: var(--radius-md); border: 1px solid var(--color-border); }
+    .kpi-icon { font-size: 2rem; color: var(--color-primary); margin-bottom: var(--space-2); }
+    .related-links { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-6); }
+    .related-link { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-3) var(--space-5); background: white; border-radius: var(--radius-sm); text-decoration: none; color: var(--color-text); border: 1px solid var(--color-border); transition: all var(--transition-fast); }
+    .related-link:hover { background: var(--color-primary); color: white; border-color: var(--color-primary); text-decoration: none; }
+  </style>
+</head>
+<body class="theme-modern-minimalist">
+  <div class="presentation">
+    <section class="slide slide--title active">
+      <p style="text-transform: uppercase; letter-spacing: 0.3em; color: var(--color-primary);">DELIVER | Supply Chain Analytics</p>
+      <div class="case-header"><span class="case-number">21</span></div>
+      <h1>Order Fulfillment Analytics</h1>
+      <p style="font-size: var(--font-size-lg); color: var(--color-text-muted); margin-top: var(--space-4);">OTIF analysis and process mining</p>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>What Is It?</h2>
+      <div style="max-width: 800px;">
+        <p style="font-size: var(--font-size-lg);">Order Fulfillment Analytics identifies root causes behind On-Time In-Full (OTIF) delivery failures.</p>
+        <ul style="margin-top: var(--space-6); font-size: var(--font-size-lg);">
+          <li><strong>Process analysis</strong> - Map actual fulfillment flows</li>
+          <li><strong>Bottleneck detection</strong> - Find delays and inefficiencies</li>
+          <li><strong>Root cause analysis</strong> - Identify underlying issues</li>
+          <li><strong>Continuous improvement</strong> - Monitor and optimize</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Process Mining Failures</h2>
+      <div class="failure-grid">
+        <div class="failure-card"><h4><i class="fas fa-hourglass-half"></i> Bottlenecks</h4><p style="font-size: var(--font-size-xs);">Flow slowdowns causing delays</p></div>
+        <div class="failure-card"><h4><i class="fas fa-random"></i> Deviations</h4><p style="font-size: var(--font-size-xs);">Actual vs intended process</p></div>
+        <div class="failure-card"><h4><i class="fas fa-redo"></i> Re-Work Loops</h4><p style="font-size: var(--font-size-xs);">Repeated tasks</p></div>
+        <div class="failure-card"><h4><i class="fas fa-eye-slash"></i> Invisible Tasks</h4><p style="font-size: var(--font-size-xs);">Unrecorded activities</p></div>
+        <div class="failure-card"><h4><i class="fas fa-exchange-alt"></i> Handovers</h4><p style="font-size: var(--font-size-xs);">Excessive transfers</p></div>
+        <div class="failure-card"><h4><i class="fas fa-exclamation-triangle"></i> Violations</h4><p style="font-size: var(--font-size-xs);">Compliance issues</p></div>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Key Performance Indicators</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-check-double"></i></div><h4>OTIF Rate</h4><p style="font-size: var(--font-size-xs);">On-time & complete</p></div>
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-clock"></i></div><h4>Cycle Time</h4><p style="font-size: var(--font-size-xs);">Order to delivery</p></div>
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-award"></i></div><h4>Perfect Order</h4><p style="font-size: var(--font-size-xs);">Zero issues</p></div>
+        <div class="kpi-card"><div class="kpi-icon"><i class="fas fa-box-open"></i></div><h4>Fill Rate</h4><p style="font-size: var(--font-size-xs);">First attempt</p></div>
+      </div>
+    </section>
+    
+    <section class="slide slide--content">
+      <h2>Related Use Cases</h2>
+      <div class="related-links">
+        <a href="../20-customer-satisfaction/index.html" class="related-link"><i class="fas fa-smile"></i> Customer Satisfaction</a>
+        <a href="../24-delivery-time/index.html" class="related-link"><i class="fas fa-clock"></i> Delivery Prediction</a>
+        <a href="../../plan/14-inventory-optimization/index.html" class="related-link"><i class="fas fa-boxes"></i> Inventory Optimization</a>
+      </div>
+      <div style="margin-top: var(--space-12); text-align: center;"><a href="../index.html" class="nav-btn"><i class="fas fa-th-large"></i> All DELIVER Cases</a></div>
+      <p style="margin-top: var(--space-6); text-align: center;"><a href="../20-customer-satisfaction/index.html" style="color: var(--color-primary);"><i class="fas fa-arrow-left"></i> Previous</a> &nbsp;|&nbsp; <a href="../22-network-design/index.html" style="color: var(--color-primary);">Next <i class="fas fa-arrow-right"></i></a></p>
+    </section>
+  </div>
+  <script src="../../../assets/js/navigation.js"></script>
+</body>
+</html>
