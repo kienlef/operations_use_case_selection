@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compliance Document Tracking | SOURCE | Supply Chain Analytics</title>
+  
+  <link rel="stylesheet" href="../../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../../../assets/css/base.css">
+  <link rel="stylesheet" href="../../../assets/css/theme-source.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    .case-header { display: flex; align-items: center; gap: var(--space-4); justify-content: center; margin-bottom: var(--space-4); }
+    .case-number { display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: var(--color-primary); color: white; font-size: var(--font-size-2xl); font-weight: 700; border-radius: var(--radius-lg); }
+    .objective-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); margin-top: var(--space-6); }
+    .objective-card { background: white; padding: var(--space-6); border-radius: var(--radius-md); border-left: 4px solid var(--color-primary); }
+    .objective-card h3 { color: var(--color-primary); margin-bottom: var(--space-2); font-size: var(--font-size-lg); }
+    .doc-types { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); margin-top: var(--space-6); }
+    .doc-card { background: white; padding: var(--space-6); border-radius: var(--radius-md); text-align: center; }
+    .doc-card h4 { color: var(--color-primary); margin-bottom: var(--space-2); }
+    .process-flow { background: var(--color-primary-dark); color: var(--color-text-light); padding: var(--space-6); border-radius: var(--radius-lg); margin-top: var(--space-6); }
+    .process-steps { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-4); }
+    .process-step { display: flex; flex-direction: column; align-items: center; text-align: center; flex: 1; min-width: 100px; }
+    .process-step i { font-size: 1.5rem; margin-bottom: var(--space-2); color: var(--color-accent); }
+    .process-arrow { color: var(--color-accent); font-size: 1.5rem; }
+    .method-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); margin-top: var(--space-6); }
+    .method-item { display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-4); background: white; border-radius: var(--radius-md); }
+    .method-icon { color: var(--color-primary); font-size: var(--font-size-xl); margin-top: 2px; }
+    .ocr-services { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); margin-top: var(--space-6); }
+    .ocr-card { background: white; padding: var(--space-4); border-radius: var(--radius-md); text-align: center; }
+    .ocr-card h4 { font-size: var(--font-size-sm); color: var(--color-primary); margin-bottom: var(--space-2); }
+    .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); margin-top: var(--space-6); text-align: center; }
+    .kpi-card { background: white; padding: var(--space-6); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+    .kpi-icon { font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-3); }
+    .related-links { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-6); }
+    .related-link { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-3) var(--space-5); background: var(--color-bg-alt); border-radius: var(--radius-full); text-decoration: none; color: var(--color-text-light); transition: all var(--transition-fast); }
+    .related-link:hover { background: var(--color-primary); text-decoration: none; }
+    @media (max-width: 768px) { .doc-types, .method-grid, .ocr-services, .kpi-grid { grid-template-columns: 1fr; } .process-steps { flex-direction: column; } .process-arrow { transform: rotate(90deg); } }
+  </style>
+</head>
+<body class="theme-ocean-depths">
+  <div class="presentation">
+    
+    <!-- Slide 1: Title -->
+    <section class="slide slide--title active">
+      <p style="text-transform: uppercase; letter-spacing: 0.3em; color: var(--color-accent); margin-bottom: var(--space-2);">
+        SOURCE | Supply Chain Analytics
+      </p>
+      <div class="case-header">
+        <span class="case-number">04</span>
+      </div>
+      <h1>Compliance Document Tracking</h1>
+      <p style="font-size: var(--font-size-lg); color: var(--color-text-light); margin-top: var(--space-4);">
+        Automated document management and regulatory compliance
+      </p>
+    </section>
+    
+    <!-- Slide 2: What Is It -->
+    <section class="slide slide--content">
+      <h2>What Is It?</h2>
+      <div style="max-width: 800px;">
+        <p style="font-size: var(--font-size-lg);">
+          Compliance Tracking involves monitoring and ensuring that suppliers adhere to specific industry regulations, legal requirements, and organizational standards throughout the supply chain.
+        </p>
+        <ul style="margin-top: var(--space-6); font-size: var(--font-size-lg);">
+          <li><strong>Establishing compliance criteria</strong> - Defining standards and requirements</li>
+          <li><strong>Assessing supplier activities</strong> - Monitoring adherence</li>
+          <li><strong>Using data analytics</strong> - Evaluating compliance levels automatically</li>
+          <li><strong>Managing documentation</strong> - Tracking certificates and records</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Slide 3: Business Objectives -->
+    <section class="slide slide--content">
+      <h2>Business Objectives</h2>
+      <div class="objective-grid">
+        <div class="objective-card">
+          <h3><i class="fas fa-shield-alt"></i> Risk Mitigation</h3>
+          <p>Reducing the risk of legal penalties, reputational damage, and supply chain disruptions.</p>
+        </div>
+        <div class="objective-card">
+          <h3><i class="fas fa-tasks"></i> Standardization</h3>
+          <p>Standardizing processes and policies to ensure consistent compliance across all suppliers.</p>
+        </div>
+        <div class="objective-card">
+          <h3><i class="fas fa-leaf"></i> Ethical Supply Chain</h3>
+          <p>Upholding ethical practices, sustainability, and corporate responsibility.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 4: Common Document Types -->
+    <section class="slide slide--content">
+      <h2>Common Document Types</h2>
+      <div class="doc-types">
+        <div class="doc-card">
+          <i class="fas fa-file-medical-alt" style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-3);"></i>
+          <h4>Certificate of Analysis (COA)</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Formal laboratory document detailing results of analyses</p>
+        </div>
+        <div class="doc-card">
+          <i class="fas fa-file-alt" style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-3);"></i>
+          <h4>Technical Data Sheet (TDS)</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Comprehensive product specifications and composition</p>
+        </div>
+        <div class="doc-card">
+          <i class="fas fa-exclamation-triangle" style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-3);"></i>
+          <h4>Safety Data Sheet (SDS)</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Occupational safety and health information</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 5: Automated Compliance Process -->
+    <section class="slide slide--content">
+      <h2>Automated Compliance Check Process</h2>
+      <div class="process-flow">
+        <div class="process-steps">
+          <div class="process-step">
+            <i class="fas fa-upload"></i>
+            <span>Document Upload</span>
+          </div>
+          <span class="process-arrow">→</span>
+          <div class="process-step">
+            <i class="fas fa-file-image"></i>
+            <span>OCR Extraction</span>
+          </div>
+          <span class="process-arrow">→</span>
+          <div class="process-step">
+            <i class="fas fa-brain"></i>
+            <span>NLP + ML Processing</span>
+          </div>
+          <span class="process-arrow">→</span>
+          <div class="process-step">
+            <i class="fas fa-check-circle"></i>
+            <span>Compliance Check</span>
+          </div>
+          <span class="process-arrow">→</span>
+          <div class="process-step">
+            <i class="fas fa-clipboard-check"></i>
+            <span>Accept/Review</span>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: var(--space-6);">
+        <h4>Key Processing Steps:</h4>
+        <ul>
+          <li><strong>OCR</strong> - Extract text, handwriting, and data from scanned documents</li>
+          <li><strong>NLP</strong> - Map terminology, verify mandatory information, confirm signatures</li>
+          <li><strong>Validation</strong> - Check parameters against specifications</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Slide 6: Analytics Methods -->
+    <section class="slide slide--content">
+      <h2>Analytics Methods</h2>
+      <div class="method-grid">
+        <div class="method-item">
+          <i class="fas fa-search method-icon"></i>
+          <div>
+            <strong>Data Mining</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Uncovering patterns indicating non-compliance</p>
+          </div>
+        </div>
+        <div class="method-item">
+          <i class="fas fa-robot method-icon"></i>
+          <div>
+            <strong>ML Classification</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Categorizing activities as compliant or non-compliant</p>
+          </div>
+        </div>
+        <div class="method-item">
+          <i class="fas fa-language method-icon"></i>
+          <div>
+            <strong>Natural Language Processing</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Analyzing contracts, audit reports, regulatory documents</p>
+          </div>
+        </div>
+      </div>
+      <h4 style="margin-top: var(--space-8);">OCR Services Available</h4>
+      <div class="ocr-services">
+        <div class="ocr-card">
+          <h4><i class="fab fa-google"></i> Cloud</h4>
+          <p style="font-size: var(--font-size-xs);">Google Cloud Vision, Amazon Textract, Azure Form Recognizer</p>
+        </div>
+        <div class="ocr-card">
+          <h4><i class="fas fa-building"></i> Specialized</h4>
+          <p style="font-size: var(--font-size-xs);">ABBYY, Kofax</p>
+        </div>
+        <div class="ocr-card">
+          <h4><i class="fas fa-code-branch"></i> Open Source</h4>
+          <p style="font-size: var(--font-size-xs);">Tesseract OCR</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 7: KPIs -->
+    <section class="slide slide--content">
+      <h2>Key Performance Indicators</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fas fa-percentage"></i></div>
+          <h4>Compliance Rate</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">% of suppliers meeting standards</p>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fas fa-coins"></i></div>
+          <h4>Cost of Compliance</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Expenses for managing compliance</p>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fas fa-user-shield"></i></div>
+          <h4>Supplier Risk Profile</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Accuracy of risk profiles</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 8: Related Cases -->
+    <section class="slide slide--content">
+      <h2>Related Use Cases</h2>
+      <div class="related-links">
+        <a href="../02-supplier-risk/index.html" class="related-link">
+          <i class="fas fa-exclamation-triangle"></i> Supplier Risk Analysis
+        </a>
+        <a href="../05-raw-materials-quality/index.html" class="related-link">
+          <i class="fas fa-flask"></i> Raw Materials Quality
+        </a>
+        <a href="../01-supplier-performance/index.html" class="related-link">
+          <i class="fas fa-chart-line"></i> Supplier Performance
+        </a>
+      </div>
+      <div style="margin-top: var(--space-12); text-align: center;">
+        <a href="../index.html" class="nav-btn">
+          <i class="fas fa-th-large"></i> All SOURCE Cases
+        </a>
+      </div>
+      <p style="margin-top: var(--space-6); text-align: center;">
+        <a href="../03-supplier-capacity/index.html" style="color: var(--color-accent);">
+          <i class="fas fa-arrow-left"></i> Previous: Capacity Planning
+        </a>
+        &nbsp;|&nbsp;
+        <a href="../05-raw-materials-quality/index.html" style="color: var(--color-accent);">
+          Next: Raw Materials Quality <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </section>
+    
+  </div>
+  
+  <script src="../../../assets/js/navigation.js"></script>
+</body>
+</html>

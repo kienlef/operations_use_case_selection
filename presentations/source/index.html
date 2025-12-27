@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOURCE | Supply Chain Analytics</title>
+  
+  <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/theme-source.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    .case-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-6);
+      margin-top: var(--space-6);
+    }
+    
+    .case-card {
+      text-decoration: none;
+      color: inherit;
+      transition: transform var(--transition-base);
+    }
+    
+    .case-card:hover {
+      text-decoration: none;
+      transform: translateY(-4px);
+    }
+    
+    .case-card .card {
+      height: 100%;
+    }
+    
+    .case-card h3 {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+    }
+    
+    .case-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: var(--color-primary);
+      color: white;
+      font-size: var(--font-size-sm);
+      font-weight: 700;
+      border-radius: var(--radius-md);
+    }
+    
+    .themes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-8);
+      margin-top: var(--space-6);
+    }
+    
+    .theme-section h3 {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      color: var(--color-primary);
+      margin-bottom: var(--space-4);
+    }
+    
+    .case-links {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      margin-top: var(--space-8);
+      align-items: center;
+    }
+    
+    .case-links a {
+      width: 350px;
+      text-align: left;
+    }
+    
+    @media (max-width: 768px) {
+      .themes-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .case-links a {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body class="theme-ocean-depths">
+  <div class="presentation">
+    
+    <!-- Slide 1: Cluster Title -->
+    <section class="slide slide--title active">
+      <p style="color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.3em; margin-bottom: var(--space-4);">
+        Supply Chain Analytics
+      </p>
+      <h1 style="display: flex; align-items: center; justify-content: center; gap: var(--space-4);">
+        <i class="fas fa-truck-loading"></i> SOURCE
+      </h1>
+      <p style="font-size: var(--font-size-xl); margin-top: var(--space-6); color: var(--color-text-light);">
+        Supplier Performance, Risk & Compliance Analytics
+      </p>
+    </section>
+    
+    <!-- Slide 2: What is Sourcing -->
+    <section class="slide slide--content">
+      <h2>What is Sourcing Analytics?</h2>
+      <div style="max-width: 800px;">
+        <p style="font-size: var(--font-size-lg);">
+          Sourcing analytics encompasses all data-driven processes related to procuring materials and services from suppliers:
+        </p>
+        <ul style="font-size: var(--font-size-lg); margin-top: var(--space-6);">
+          <li><strong>Selecting and managing suppliers</strong> - Finding the right partners for your supply chain</li>
+          <li><strong>Monitoring quality and performance</strong> - Ensuring suppliers meet standards</li>
+          <li><strong>Managing compliance and documentation</strong> - Meeting regulatory requirements</li>
+          <li><strong>Assessing and mitigating risks</strong> - Protecting against disruptions</li>
+          <li><strong>Planning capacity and collaboration</strong> - Aligning supply with demand</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Slide 3: Use Cases -->
+    <section class="slide slide--content">
+      <h2>SOURCE Use Cases</h2>
+      <div class="case-grid">
+        
+        <a href="01-supplier-performance/index.html" class="case-card">
+          <div class="card">
+            <h3><span class="case-number">01</span> Supplier Performance</h3>
+            <p>Metrics and KPIs for evaluating supplier effectiveness, including on-time delivery, quality ratings, and cost performance.</p>
+          </div>
+        </a>
+        
+        <a href="02-supplier-risk/index.html" class="case-card">
+          <div class="card">
+            <h3><span class="case-number">02</span> Supplier Risk</h3>
+            <p>Analytics for identifying and mitigating supplier risks through risk scoring, scenario analysis, and network evaluation.</p>
+          </div>
+        </a>
+        
+        <a href="03-supplier-capacity/index.html" class="case-card">
+          <div class="card">
+            <h3><span class="case-number">03</span> Capacity Planning</h3>
+            <p>Aligning supplier capabilities with demand through lead time analysis, constraint optimization, and collaborative planning.</p>
+          </div>
+        </a>
+        
+        <a href="04-compliance-tracking/index.html" class="case-card">
+          <div class="card">
+            <h3><span class="case-number">04</span> Compliance Tracking</h3>
+            <p>Document management and regulatory compliance using OCR, NLP, and automated compliance verification systems.</p>
+          </div>
+        </a>
+        
+        <a href="05-raw-materials-quality/index.html" class="case-card">
+          <div class="card">
+            <h3><span class="case-number">05</span> Raw Materials Quality</h3>
+            <p>Quality assurance for incoming materials through statistical quality control, root cause analysis, and predictive methods.</p>
+          </div>
+        </a>
+        
+      </div>
+    </section>
+    
+    <!-- Slide 4: Common Themes -->
+    <section class="slide slide--content">
+      <h2>Common Analytics Themes</h2>
+      <div class="themes-grid">
+        <div class="theme-section">
+          <h3><i class="fas fa-database"></i> Data Sources</h3>
+          <ul>
+            <li>Supplier master data</li>
+            <li>Transaction records</li>
+            <li>Quality test results</li>
+            <li>External market data</li>
+            <li>Credit ratings & financials</li>
+            <li>Audit & compliance records</li>
+          </ul>
+        </div>
+        <div class="theme-section">
+          <h3><i class="fas fa-cogs"></i> Methods</h3>
+          <ul>
+            <li>Risk scoring algorithms</li>
+            <li>Statistical analysis</li>
+            <li>NLP for documents</li>
+            <li>Predictive modeling</li>
+            <li>Monte Carlo simulation</li>
+            <li>Network analysis</li>
+          </ul>
+        </div>
+        <div class="theme-section">
+          <h3><i class="fas fa-chart-bar"></i> KPIs</h3>
+          <ul>
+            <li>On-time delivery rate</li>
+            <li>Quality rating</li>
+            <li>Compliance rate</li>
+            <li>Risk exposure score</li>
+            <li>Supplier lead time</li>
+            <li>Cost of quality</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 5: Navigation -->
+    <section class="slide slide--title">
+      <h2>Explore SOURCE Cases</h2>
+      <div class="case-links">
+        <a href="01-supplier-performance/index.html" class="nav-btn">
+          <span class="case-number" style="margin-right: var(--space-2);">01</span> Supplier Performance <i class="fas fa-arrow-right" style="margin-left: auto;"></i>
+        </a>
+        <a href="02-supplier-risk/index.html" class="nav-btn">
+          <span class="case-number" style="margin-right: var(--space-2);">02</span> Supplier Risk <i class="fas fa-arrow-right" style="margin-left: auto;"></i>
+        </a>
+        <a href="03-supplier-capacity/index.html" class="nav-btn">
+          <span class="case-number" style="margin-right: var(--space-2);">03</span> Capacity Planning <i class="fas fa-arrow-right" style="margin-left: auto;"></i>
+        </a>
+        <a href="04-compliance-tracking/index.html" class="nav-btn">
+          <span class="case-number" style="margin-right: var(--space-2);">04</span> Compliance Tracking <i class="fas fa-arrow-right" style="margin-left: auto;"></i>
+        </a>
+        <a href="05-raw-materials-quality/index.html" class="nav-btn">
+          <span class="case-number" style="margin-right: var(--space-2);">05</span> Raw Materials Quality <i class="fas fa-arrow-right" style="margin-left: auto;"></i>
+        </a>
+      </div>
+      <p style="margin-top: var(--space-8);">
+        <a href="../../index.html" style="color: var(--color-accent);">
+          <i class="fas fa-home"></i> Back to Home
+        </a>
+        &nbsp;|&nbsp;
+        <a href="../overview/index.html" style="color: var(--color-accent);">
+          <i class="fas fa-th-large"></i> Overview
+        </a>
+      </p>
+    </section>
+    
+  </div>
+  
+  <script src="../../assets/js/navigation.js"></script>
+</body>
+</html>

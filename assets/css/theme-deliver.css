@@ -1,0 +1,199 @@
+/* ============================================
+   MODERN MINIMALIST THEME
+   DELIVER Cluster
+   ============================================ */
+
+.theme-modern-minimalist {
+  /* Color Palette */
+  --color-primary: #36454f;
+  --color-primary-dark: #2a363e;
+  --color-primary-light: #708090;
+  --color-accent: #d3d3d3;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f8f9fa;
+  --color-text: #36454f;
+  --color-text-muted: #708090;
+  --color-border: #e0e0e0;
+  
+  /* Typography */
+  --font-header: 'Poppins', 'Arial', sans-serif;
+  --font-body: 'Work Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Pure Clean Background */
+.theme-modern-minimalist .presentation {
+  background: var(--color-bg);
+}
+
+/* Subtle Grid */
+.theme-modern-minimalist .slide {
+  border-left: 1px solid var(--color-border);
+  margin-left: var(--space-8);
+}
+
+/* Title Slide */
+.theme-modern-minimalist .slide--title {
+  border-left: none;
+  margin-left: 0;
+}
+
+.theme-modern-minimalist .slide--title h1 {
+  color: var(--color-primary);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Minimal Accent Line */
+.theme-modern-minimalist .slide--title h1::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--color-primary);
+  margin-top: var(--space-6);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.theme-modern-minimalist .slide--title p {
+  color: var(--color-text-muted);
+}
+
+/* Cards */
+.theme-modern-minimalist .card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-6);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.theme-modern-minimalist .card:hover {
+  border-color: var(--color-primary-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.theme-modern-minimalist .card h3 {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* Buttons - Minimal */
+.theme-modern-minimalist .nav-btn {
+  background-color: var(--color-primary);
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+}
+
+.theme-modern-minimalist .nav-btn:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Progress Bar - Subtle */
+.theme-modern-minimalist .progress-bar {
+  height: 2px;
+  background: var(--color-primary);
+}
+
+/* Lists - Clean */
+.theme-modern-minimalist ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-modern-minimalist li {
+  padding-left: var(--space-6);
+  position: relative;
+  margin-bottom: var(--space-3);
+}
+
+.theme-modern-minimalist li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 8px;
+  height: 2px;
+  background: var(--color-primary);
+}
+
+/* Tables - Minimal Lines */
+.theme-modern-minimalist table {
+  border: none;
+}
+
+.theme-modern-minimalist th,
+.theme-modern-minimalist td {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.theme-modern-minimalist th {
+  background: transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+}
+
+.theme-modern-minimalist table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Quote Styling */
+.theme-modern-minimalist blockquote {
+  border-left: 2px solid var(--color-primary);
+  padding-left: var(--space-6);
+  font-style: italic;
+  color: var(--color-text-muted);
+}
+
+/* Slide counter */
+.theme-modern-minimalist .slide-counter {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Links */
+.theme-modern-minimalist a {
+  color: var(--color-primary);
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition-fast);
+}
+
+.theme-modern-minimalist a:hover {
+  border-bottom-color: var(--color-primary);
+  text-decoration: none;
+}
+
+/* Dividers */
+.theme-modern-minimalist hr {
+  border: none;
+  height: 1px;
+  background: var(--color-border);
+  margin: var(--space-8) 0;
+}
+
+/* Emphasis text */
+.theme-modern-minimalist .emphasis {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* Number/Stats display */
+.theme-modern-minimalist .stat {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.theme-modern-minimalist .stat-label {
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  margin-top: var(--space-2);
+}

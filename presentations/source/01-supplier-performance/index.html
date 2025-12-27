@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supplier Performance Metrics | SOURCE | Supply Chain Analytics</title>
+  
+  <link rel="stylesheet" href="../../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../../../assets/css/base.css">
+  <link rel="stylesheet" href="../../../assets/css/theme-source.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    .case-header {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      justify-content: center;
+      margin-bottom: var(--space-4);
+    }
+    
+    .case-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      background: var(--color-primary);
+      color: white;
+      font-size: var(--font-size-2xl);
+      font-weight: 700;
+      border-radius: var(--radius-lg);
+    }
+    
+    .objective-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-6);
+      margin-top: var(--space-6);
+    }
+    
+    .objective-card {
+      background: white;
+      padding: var(--space-6);
+      border-radius: var(--radius-md);
+      border-left: 4px solid var(--color-primary);
+    }
+    
+    .objective-card h3 {
+      color: var(--color-primary);
+      margin-bottom: var(--space-2);
+      font-size: var(--font-size-lg);
+    }
+    
+    .data-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-6);
+      margin-top: var(--space-6);
+    }
+    
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-4);
+      margin-top: var(--space-6);
+    }
+    
+    .method-item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-3);
+      padding: var(--space-4);
+      background: white;
+      border-radius: var(--radius-md);
+    }
+    
+    .method-icon {
+      color: var(--color-primary);
+      font-size: var(--font-size-xl);
+      margin-top: 2px;
+    }
+    
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6);
+      margin-top: var(--space-6);
+      text-align: center;
+    }
+    
+    .kpi-card {
+      background: white;
+      padding: var(--space-6);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+    }
+    
+    .kpi-icon {
+      font-size: 2.5rem;
+      color: var(--color-primary);
+      margin-bottom: var(--space-3);
+    }
+    
+    .related-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+      margin-top: var(--space-6);
+    }
+    
+    .related-link {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      padding: var(--space-3) var(--space-5);
+      background: var(--color-bg-alt);
+      border-radius: var(--radius-full);
+      text-decoration: none;
+      color: var(--color-text-light);
+      transition: all var(--transition-fast);
+    }
+    
+    .related-link:hover {
+      background: var(--color-primary);
+      text-decoration: none;
+    }
+    
+    @media (max-width: 768px) {
+      .data-grid, .method-grid, .kpi-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body class="theme-ocean-depths">
+  <div class="presentation">
+    
+    <!-- Slide 1: Title -->
+    <section class="slide slide--title active">
+      <p style="text-transform: uppercase; letter-spacing: 0.3em; color: var(--color-accent); margin-bottom: var(--space-2);">
+        SOURCE | Supply Chain Analytics
+      </p>
+      <div class="case-header">
+        <span class="case-number">01</span>
+      </div>
+      <h1>Supplier Performance Metrics</h1>
+      <p style="font-size: var(--font-size-lg); color: var(--color-text-light); margin-top: var(--space-4);">
+        Measuring and monitoring supplier effectiveness
+      </p>
+    </section>
+    
+    <!-- Slide 2: What Is It -->
+    <section class="slide slide--content">
+      <h2>What Is It?</h2>
+      <div style="max-width: 800px;">
+        <p style="font-size: var(--font-size-lg);">
+          Supplier Performance Metrics are a set of quantifiable measures used to gauge and monitor the efficiency, effectiveness, and reliability of suppliers within a supply chain.
+        </p>
+        <ul style="margin-top: var(--space-6); font-size: var(--font-size-lg);">
+          <li><strong>On-time delivery rates</strong> - Measuring supplier reliability</li>
+          <li><strong>Quality of goods</strong> - Defect rates and conformance</li>
+          <li><strong>Cost-effectiveness</strong> - Value for money assessment</li>
+          <li><strong>Responsiveness</strong> - Reaction time to changes</li>
+          <li><strong>Compliance</strong> - Adherence to contracts and standards</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Slide 3: Business Objectives -->
+    <section class="slide slide--content">
+      <h2>Business Objectives</h2>
+      <div class="objective-grid">
+        <div class="objective-card">
+          <h3><i class="fas fa-chart-line"></i> Optimized Performance</h3>
+          <p>Using metrics to drive improvements in supplier performance, leading to better efficiency and quality across the supply chain.</p>
+        </div>
+        <div class="objective-card">
+          <h3><i class="fas fa-dollar-sign"></i> Cost Reduction</h3>
+          <p>Identifying areas for cost savings and reducing risks associated with supplier inefficiencies and poor quality.</p>
+        </div>
+        <div class="objective-card">
+          <h3><i class="fas fa-handshake"></i> Strategic Relationships</h3>
+          <p>Developing strategic relationships with key suppliers based on performance data and mutual improvement goals.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 4: Key Challenges -->
+    <section class="slide slide--content">
+      <h2>Key Challenges</h2>
+      <div style="max-width: 800px;">
+        <ol style="font-size: var(--font-size-lg);">
+          <li style="margin-bottom: var(--space-4);">
+            <strong>Data Accuracy and Collection</strong><br>
+            <span style="color: var(--color-text-muted);">Gathering accurate and timely data from multiple suppliers can be challenging, especially across different systems and geographies.</span>
+          </li>
+          <li style="margin-bottom: var(--space-4);">
+            <strong>Setting Relevant Metrics</strong><br>
+            <span style="color: var(--color-text-muted);">Identifying the most relevant and impactful metrics that align with specific business goals requires careful analysis.</span>
+          </li>
+          <li style="margin-bottom: var(--space-4);">
+            <strong>Supplier Collaboration and Compliance</strong><br>
+            <span style="color: var(--color-text-muted);">Ensuring suppliers understand, agree with, and adhere to the set performance metrics requires ongoing communication.</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+    
+    <!-- Slide 5: Data Requirements -->
+    <section class="slide slide--content">
+      <h2>Data Requirements</h2>
+      <div class="data-grid">
+        <div>
+          <h3><i class="fas fa-building"></i> Internal Data</h3>
+          <ul>
+            <li><strong>Delivery Records</strong> - Historical data on delivery times, quantities, conditions</li>
+            <li><strong>Quality Inspection Reports</strong> - Defect rates, non-conformances</li>
+            <li><strong>Procurement Data</strong> - Purchase orders, prices, volume discounts</li>
+          </ul>
+        </div>
+        <div>
+          <h3><i class="fas fa-globe"></i> External Data</h3>
+          <ul>
+            <li><strong>Market Intelligence</strong> - Dun & Bradstreet, ThomasNet insights</li>
+            <li><strong>Trade Associations</strong> - Industry benchmarks and standards</li>
+            <li><strong>Credit Ratings</strong> - Moody's, S&P financial stability ratings</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 6: Analytics Methods -->
+    <section class="slide slide--content">
+      <h2>Analytics Methods</h2>
+      <div class="method-grid">
+        <div class="method-item">
+          <i class="fas fa-calculator method-icon"></i>
+          <div>
+            <strong>Statistical Analysis</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Benchmarking supplier performance and identifying outliers</p>
+          </div>
+        </div>
+        <div class="method-item">
+          <i class="fas fa-brain method-icon"></i>
+          <div>
+            <strong>Predictive Analytics</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Forecasting future supplier performance based on historical trends</p>
+          </div>
+        </div>
+        <div class="method-item">
+          <i class="fas fa-project-diagram method-icon"></i>
+          <div>
+            <strong>Multivariate Analysis</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Understanding impact of various factors on supplier performance</p>
+          </div>
+        </div>
+        <div class="method-item">
+          <i class="fas fa-balance-scale method-icon"></i>
+          <div>
+            <strong>Data Envelopment Analysis (DEA)</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Measuring efficiency of suppliers relative to each other</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 7: KPIs -->
+    <section class="slide slide--content">
+      <h2>Key Performance Indicators</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fas fa-star"></i></div>
+          <h4>Quality Rating</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Conformity of goods to quality standards</p>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fas fa-piggy-bank"></i></div>
+          <h4>Cost Reduction</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Achieved through effective supplier negotiation</p>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fas fa-clipboard-check"></i></div>
+          <h4>Compliance Rate</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Adherence to agreed terms and regulations</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 8: Related Cases -->
+    <section class="slide slide--content">
+      <h2>Related Use Cases</h2>
+      <div class="related-links">
+        <a href="../02-supplier-risk/index.html" class="related-link">
+          <i class="fas fa-exclamation-triangle"></i> Supplier Risk Analysis
+        </a>
+        <a href="../03-supplier-capacity/index.html" class="related-link">
+          <i class="fas fa-boxes"></i> Supplier Capacity Planning
+        </a>
+        <a href="../05-raw-materials-quality/index.html" class="related-link">
+          <i class="fas fa-flask"></i> Raw Materials Quality
+        </a>
+      </div>
+      <div style="margin-top: var(--space-12); text-align: center;">
+        <a href="../index.html" class="nav-btn">
+          <i class="fas fa-th-large"></i> All SOURCE Cases
+        </a>
+      </div>
+      <p style="margin-top: var(--space-6); text-align: center;">
+        <a href="../02-supplier-risk/index.html" style="color: var(--color-accent);">
+          Next: Supplier Risk Analysis <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </section>
+    
+  </div>
+  
+  <script src="../../../assets/js/navigation.js"></script>
+</body>
+</html>

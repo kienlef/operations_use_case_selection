@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supply Chain Analytics | Data2Value</title>
+  <meta name="description" content="Interactive supply chain analytics learning platform - From data to value in supply chain management">
+  
+  <!-- Fonts -->
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/theme-main.css">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    /* Landing Page Specific Styles */
+    .landing {
+      min-height: 100vh;
+    }
+    
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: var(--space-12);
+      background: 
+        linear-gradient(135deg, rgba(45, 74, 43, 0.05) 0%, transparent 50%),
+        var(--color-bg);
+    }
+    
+    .hero h1 {
+      font-size: var(--font-size-6xl);
+      color: var(--color-primary);
+      margin-bottom: var(--space-4);
+    }
+    
+    .hero .tagline {
+      font-size: var(--font-size-xl);
+      color: var(--color-text-muted);
+      max-width: 600px;
+      margin-bottom: var(--space-8);
+    }
+    
+    .hero .brand {
+      font-size: var(--font-size-sm);
+      color: var(--color-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-bottom: var(--space-4);
+    }
+    
+    .cta-button {
+      display: inline-block;
+      padding: var(--space-4) var(--space-8);
+      background: var(--color-primary);
+      color: white;
+      font-size: var(--font-size-lg);
+      font-weight: 600;
+      border-radius: var(--radius-lg);
+      text-decoration: none;
+      transition: all var(--transition-base);
+    }
+    
+    .cta-button:hover {
+      background: var(--color-primary-dark);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+      text-decoration: none;
+      color: white;
+    }
+    
+    .clusters {
+      padding: var(--space-16) var(--space-12);
+      background: var(--color-bg-alt);
+    }
+    
+    .clusters h2 {
+      text-align: center;
+      margin-bottom: var(--space-12);
+      color: var(--color-primary);
+    }
+    
+    .cluster-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-8);
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .cluster-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: var(--space-8);
+      text-align: center;
+      transition: all var(--transition-base);
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      box-shadow: var(--shadow-md);
+    }
+    
+    .cluster-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-xl);
+      text-decoration: none;
+    }
+    
+    .cluster-card .icon {
+      font-size: 3rem;
+      margin-bottom: var(--space-4);
+    }
+    
+    .cluster-card h3 {
+      margin-bottom: var(--space-2);
+    }
+    
+    .cluster-card p {
+      color: var(--color-text-muted);
+      font-size: var(--font-size-sm);
+    }
+    
+    .cluster-card .count {
+      display: inline-block;
+      background: var(--color-bg-alt);
+      padding: var(--space-1) var(--space-3);
+      border-radius: var(--radius-full);
+      font-size: var(--font-size-xs);
+      margin-top: var(--space-4);
+    }
+    
+    /* Cluster-specific colors */
+    .cluster-source { border-top: 4px solid #2d8b8b; }
+    .cluster-source .icon { color: #2d8b8b; }
+    
+    .cluster-make { border-top: 4px solid #0066ff; }
+    .cluster-make .icon { color: #0066ff; }
+    
+    .cluster-plan { border-top: 4px solid #4a6fa5; }
+    .cluster-plan .icon { color: #4a6fa5; }
+    
+    .cluster-deliver { border-top: 4px solid #36454f; }
+    .cluster-deliver .icon { color: #36454f; }
+    
+    .footer {
+      padding: var(--space-8) var(--space-12);
+      text-align: center;
+      color: var(--color-text-muted);
+      font-size: var(--font-size-sm);
+      background: var(--color-bg);
+    }
+    
+    .footer a {
+      color: var(--color-primary);
+    }
+    
+    .footer-links {
+      margin-top: var(--space-4);
+    }
+    
+    .footer-links a {
+      margin: 0 var(--space-3);
+    }
+    
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: var(--font-size-4xl);
+      }
+      
+      .hero .tagline {
+        font-size: var(--font-size-base);
+      }
+      
+      .cluster-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body class="theme-forest-canopy">
+  <main class="landing">
+    <!-- Hero Section -->
+    <section class="hero">
+      <p class="brand">Data2Value Initiative</p>
+      <h1>Supply Chain Analytics</h1>
+      <p class="tagline">
+        Transforming supply chain operations through data-driven insights. 
+        25+ interactive use cases across sourcing, manufacturing, planning, and delivery.
+      </p>
+      <a href="presentations/overview/index.html" class="cta-button">
+        Start Learning <i class="fas fa-arrow-right"></i>
+      </a>
+    </section>
+    
+    <!-- Clusters Section -->
+    <section class="clusters">
+      <h2>Explore by Domain</h2>
+      <div class="cluster-grid">
+        
+        <a href="presentations/source/index.html" class="cluster-card cluster-source">
+          <div class="icon"><i class="fas fa-truck-loading"></i></div>
+          <h3>SOURCE</h3>
+          <p>Supplier performance, risk analysis, capacity planning, and compliance tracking</p>
+          <span class="count">5 Use Cases</span>
+        </a>
+        
+        <a href="presentations/make/index.html" class="cluster-card cluster-make">
+          <div class="icon"><i class="fas fa-industry"></i></div>
+          <h3>MAKE</h3>
+          <p>Manufacturing cost, scheduling, predictive maintenance, and digital twins</p>
+          <span class="count">7 Use Cases</span>
+        </a>
+        
+        <a href="presentations/plan/index.html" class="cluster-card cluster-plan">
+          <div class="icon"><i class="fas fa-chart-line"></i></div>
+          <h3>PLAN</h3>
+          <p>Demand forecasting, inventory optimization, S&OP, and risk analysis</p>
+          <span class="count">7 Use Cases</span>
+        </a>
+        
+        <a href="presentations/deliver/index.html" class="cluster-card cluster-deliver">
+          <div class="icon"><i class="fas fa-shipping-fast"></i></div>
+          <h3>DELIVER</h3>
+          <p>Customer satisfaction, fulfillment, network design, and route optimization</p>
+          <span class="count">6 Use Cases</span>
+        </a>
+        
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        Part of the <strong>Data2Value</strong> initiative by 
+        <a href="https://linkedin.com/in/frankkienle" target="_blank">Frank Kienle</a>
+      </p>
+      <div class="footer-links">
+        <a href="https://youtube.com/@data2value" target="_blank">
+          <i class="fab fa-youtube"></i> YouTube
+        </a>
+        <a href="https://github.com/kienlef/supply-chain-analytics" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://linkedin.com/in/frankkienle" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+    </footer>
+  </main>
+  
+  <script src="assets/js/animations.js"></script>
+</body>
+</html>

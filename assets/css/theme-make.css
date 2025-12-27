@@ -1,0 +1,209 @@
+/* ============================================
+   TECH INNOVATION THEME
+   MAKE Cluster
+   ============================================ */
+
+.theme-tech-innovation {
+  /* Color Palette */
+  --color-primary: #0066ff;
+  --color-primary-dark: #0052cc;
+  --color-accent: #00ffff;
+  --color-bg: #1e1e1e;
+  --color-bg-alt: #2d2d2d;
+  --color-text: #ffffff;
+  --color-text-muted: #a0a0a0;
+  --color-border: #404040;
+  
+  /* Typography */
+  --font-header: 'Orbitron', 'Arial Black', sans-serif;
+  --font-body: 'Roboto Mono', 'Courier New', monospace;
+}
+
+/* Dark Tech Background */
+.theme-tech-innovation .presentation {
+  background: 
+    radial-gradient(ellipse at top right, rgba(0, 102, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom left, rgba(0, 255, 255, 0.05) 0%, transparent 50%),
+    var(--color-bg);
+}
+
+/* Grid Pattern Overlay */
+.theme-tech-innovation .slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(0, 102, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 102, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+}
+
+/* Title Slide */
+.theme-tech-innovation .slide--title {
+  background: var(--color-bg);
+}
+
+.theme-tech-innovation .slide--title h1 {
+  color: var(--color-text);
+  text-shadow: 
+    0 0 10px var(--color-primary),
+    0 0 20px var(--color-primary),
+    0 0 40px var(--color-primary);
+  letter-spacing: 0.1em;
+}
+
+.theme-tech-innovation .slide--title p {
+  color: var(--color-text-muted);
+}
+
+/* Glowing Accent */
+.theme-tech-innovation .highlight {
+  color: var(--color-accent);
+  text-shadow: 0 0 10px var(--color-accent);
+}
+
+/* Cards */
+.theme-tech-innovation .card {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-6);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.theme-tech-innovation .card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+}
+
+.theme-tech-innovation .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 30px rgba(0, 102, 255, 0.3);
+}
+
+.theme-tech-innovation .card h3 {
+  color: var(--color-accent);
+}
+
+.theme-tech-innovation .card p {
+  color: var(--color-text-muted);
+}
+
+/* Buttons */
+.theme-tech-innovation .nav-btn {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.theme-tech-innovation .nav-btn:hover {
+  box-shadow: 
+    0 0 20px var(--color-primary),
+    0 0 40px rgba(0, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+/* Progress Bar */
+.theme-tech-innovation .progress-bar {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  box-shadow: 0 0 10px var(--color-primary);
+}
+
+/* Code Blocks */
+.theme-tech-innovation pre {
+  background: #0d0d0d;
+  border: 1px solid var(--color-primary);
+  box-shadow: 0 0 20px rgba(0, 102, 255, 0.2);
+}
+
+.theme-tech-innovation code {
+  color: var(--color-accent);
+  background: rgba(0, 102, 255, 0.1);
+}
+
+/* Tables */
+.theme-tech-innovation table {
+  border: 1px solid var(--color-border);
+}
+
+.theme-tech-innovation table th {
+  background: linear-gradient(180deg, var(--color-bg-alt), var(--color-bg));
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: var(--font-size-sm);
+}
+
+.theme-tech-innovation table td {
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.theme-tech-innovation table tr:hover {
+  background: rgba(0, 102, 255, 0.1);
+}
+
+/* Lists */
+.theme-tech-innovation ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-tech-innovation li {
+  padding-left: var(--space-6);
+  position: relative;
+  color: var(--color-text);
+}
+
+.theme-tech-innovation li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
+
+/* Slide counter */
+.theme-tech-innovation .slide-counter {
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+}
+
+/* Data Animation */
+@keyframes dataFlow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.theme-tech-innovation .data-flow {
+  background: linear-gradient(90deg, 
+    var(--color-bg), 
+    var(--color-primary), 
+    var(--color-accent), 
+    var(--color-primary), 
+    var(--color-bg));
+  background-size: 200% 100%;
+  animation: dataFlow 3s linear infinite;
+}
+
+/* Glowing border animation */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 5px var(--color-primary); }
+  50% { box-shadow: 0 0 20px var(--color-primary), 0 0 30px var(--color-accent); }
+}
+
+.theme-tech-innovation .glow {
+  animation: glowPulse 2s ease-in-out infinite;
+}

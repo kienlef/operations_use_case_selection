@@ -1,0 +1,130 @@
+/* ============================================
+   OCEAN DEPTHS THEME
+   SOURCE Cluster
+   ============================================ */
+
+.theme-ocean-depths {
+  /* Color Palette */
+  --color-primary: #2d8b8b;
+  --color-primary-dark: #1a2332;
+  --color-primary-light: #a8dadc;
+  --color-accent: #a8dadc;
+  --color-bg: #f1faee;
+  --color-bg-alt: #1a2332;
+  --color-text: #1a2332;
+  --color-text-light: #f1faee;
+  --color-text-muted: #4a5568;
+  --color-border: #a8dadc;
+  
+  /* Typography */
+  --font-header: 'Merriweather', Georgia, serif;
+  --font-body: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Deep Ocean Background */
+.theme-ocean-depths .presentation {
+  background: linear-gradient(180deg, 
+    var(--color-bg) 0%, 
+    rgba(168, 218, 220, 0.2) 100%);
+}
+
+/* Title Slide - Dark Depths */
+.theme-ocean-depths .slide--title {
+  background: var(--color-primary-dark);
+  color: var(--color-text-light);
+}
+
+.theme-ocean-depths .slide--title h1 {
+  color: var(--color-accent);
+  text-shadow: 0 0 30px rgba(168, 218, 220, 0.3);
+}
+
+.theme-ocean-depths .slide--title p {
+  color: var(--color-text-light);
+}
+
+/* Wave Decoration */
+.theme-ocean-depths .slide::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60'%3E%3Cpath fill='%232d8b8b' fill-opacity='0.1' d='M0,30 C360,60 720,0 1080,30 C1260,45 1350,45 1440,30 L1440,60 L0,60 Z'/%3E%3C/svg%3E");
+  background-size: cover;
+  pointer-events: none;
+}
+
+/* Cards */
+.theme-ocean-depths .card {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-top: 4px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-lg);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.theme-ocean-depths .card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Buttons */
+.theme-ocean-depths .nav-btn {
+  background-color: var(--color-primary);
+  border-radius: var(--radius-full);
+}
+
+.theme-ocean-depths .nav-btn:hover {
+  background-color: var(--color-primary-dark);
+  box-shadow: 0 0 20px rgba(45, 139, 139, 0.4);
+}
+
+/* Progress Bar */
+.theme-ocean-depths .progress-bar {
+  background: linear-gradient(90deg, var(--color-primary-dark), var(--color-primary));
+}
+
+/* Table Styling */
+.theme-ocean-depths table th {
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-light);
+}
+
+.theme-ocean-depths table tr:nth-child(even) {
+  background-color: rgba(168, 218, 220, 0.1);
+}
+
+/* Blockquotes */
+.theme-ocean-depths blockquote {
+  border-left: 4px solid var(--color-primary);
+  padding: var(--space-4) var(--space-6);
+  background: rgba(168, 218, 220, 0.1);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+/* Lists in cards */
+.theme-ocean-depths .card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-ocean-depths .card li {
+  padding-left: var(--space-6);
+  position: relative;
+}
+
+.theme-ocean-depths .card li::before {
+  content: '●';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+}
+
+/* Slide counter */
+.theme-ocean-depths .slide-counter {
+  color: var(--color-text-muted);
+}

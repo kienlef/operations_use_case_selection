@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supplier Capacity Planning | SOURCE | Supply Chain Analytics</title>
+  
+  <link rel="stylesheet" href="../../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../../../assets/css/base.css">
+  <link rel="stylesheet" href="../../../assets/css/theme-source.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    .case-header { display: flex; align-items: center; gap: var(--space-4); justify-content: center; margin-bottom: var(--space-4); }
+    .case-number { display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: var(--color-primary); color: white; font-size: var(--font-size-2xl); font-weight: 700; border-radius: var(--radius-lg); }
+    .objective-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); margin-top: var(--space-6); }
+    .objective-card { background: white; padding: var(--space-6); border-radius: var(--radius-md); border-left: 4px solid var(--color-primary); }
+    .objective-card h3 { color: var(--color-primary); margin-bottom: var(--space-2); font-size: var(--font-size-lg); }
+    .connectivity-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-6); margin-top: var(--space-6); }
+    .connectivity-card { background: white; padding: var(--space-6); border-radius: var(--radius-md); }
+    .connectivity-card h3 { color: var(--color-primary); margin-bottom: var(--space-4); }
+    .method-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); margin-top: var(--space-6); }
+    .method-item { display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-4); background: white; border-radius: var(--radius-md); }
+    .method-icon { color: var(--color-primary); font-size: var(--font-size-xl); margin-top: 2px; }
+    .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); margin-top: var(--space-6); text-align: center; }
+    .kpi-card { background: white; padding: var(--space-6); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+    .kpi-icon { font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-3); }
+    .related-links { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-6); }
+    .related-link { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-3) var(--space-5); background: var(--color-bg-alt); border-radius: var(--radius-full); text-decoration: none; color: var(--color-text-light); transition: all var(--transition-fast); }
+    .related-link:hover { background: var(--color-primary); text-decoration: none; }
+    @media (max-width: 768px) { .connectivity-grid, .method-grid, .kpi-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body class="theme-ocean-depths">
+  <div class="presentation">
+    
+    <!-- Slide 1: Title -->
+    <section class="slide slide--title active">
+      <p style="text-transform: uppercase; letter-spacing: 0.3em; color: var(--color-accent); margin-bottom: var(--space-2);">
+        SOURCE | Supply Chain Analytics
+      </p>
+      <div class="case-header">
+        <span class="case-number">03</span>
+      </div>
+      <h1>Supplier Capacity Planning</h1>
+      <p style="font-size: var(--font-size-lg); color: var(--color-text-light); margin-top: var(--space-4);">
+        Aligning supplier capabilities with demand
+      </p>
+    </section>
+    
+    <!-- Slide 2: What Is It -->
+    <section class="slide slide--content">
+      <h2>What Is It?</h2>
+      <div style="max-width: 800px;">
+        <p style="font-size: var(--font-size-lg);">
+          Supplier Capacity Planning involves predicting and managing the capacity of suppliers to meet current and future demands of the business.
+        </p>
+        <ul style="margin-top: var(--space-6); font-size: var(--font-size-lg);">
+          <li><strong>Production capabilities</strong> - Understanding supplier output limits</li>
+          <li><strong>Lead times</strong> - Planning for order-to-delivery windows</li>
+          <li><strong>Potential bottlenecks</strong> - Identifying constraints early</li>
+          <li><strong>Demand alignment</strong> - Matching supply with production schedules</li>
+        </ul>
+        <p style="margin-top: var(--space-4); font-size: var(--font-size-lg);">
+          The goal is to ensure a smooth and uninterrupted supply chain flow.
+        </p>
+      </div>
+    </section>
+    
+    <!-- Slide 3: Business Objectives -->
+    <section class="slide slide--content">
+      <h2>Business Objectives</h2>
+      <div class="objective-grid">
+        <div class="objective-card">
+          <h3><i class="fas fa-cogs"></i> Supply Chain Efficiency</h3>
+          <p>Optimizing the flow of goods from suppliers to ensure timely production and delivery.</p>
+        </div>
+        <div class="objective-card">
+          <h3><i class="fas fa-dollar-sign"></i> Cost Reduction</h3>
+          <p>Minimizing costs related to overproduction, storage, and expedited shipping by aligning supply with demand.</p>
+        </div>
+        <div class="objective-card">
+          <h3><i class="fas fa-shield-alt"></i> Risk Mitigation</h3>
+          <p>Reducing the risk of stockouts, production delays, and excess inventory.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 4: Digital Supplier Connectivity -->
+    <section class="slide slide--content">
+      <h2>Digital Supplier Connectivity</h2>
+      <p style="margin-bottom: var(--space-4);">Streamlining collaboration between companies and trading partners is a business imperative.</p>
+      <div class="connectivity-grid">
+        <div class="connectivity-card">
+          <h3><i class="fas fa-shopping-cart"></i> For Buyers</h3>
+          <ul>
+            <li>Share demand and forecast plans with suppliers</li>
+            <li>Communicate stock on hand and min/max inventory levels</li>
+            <li>Integrate supplier replenishment plans into ERP</li>
+            <li>Run SMI programs with standard or consigned stock</li>
+          </ul>
+        </div>
+        <div class="connectivity-card">
+          <h3><i class="fas fa-warehouse"></i> For Suppliers</h3>
+          <ul>
+            <li>View stock on hand and demand plans</li>
+            <li>Receive projected stock alerts for compliance</li>
+            <li>Gain early visibility into customer demand</li>
+            <li>Plan and execute replenishments against targets</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 5: Data Requirements -->
+    <section class="slide slide--content">
+      <h2>Data Requirements</h2>
+      <table style="margin-top: var(--space-6);">
+        <thead>
+          <tr>
+            <th>Data Type</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Master Data</strong></td>
+            <td>Supplier capabilities, maximum output levels, machinery, labor force</td>
+          </tr>
+          <tr>
+            <td><strong>Transactional Data</strong></td>
+            <td>Historical order quantities, delivery times, fulfillment rates</td>
+          </tr>
+          <tr>
+            <td><strong>Lead Time Data</strong></td>
+            <td>Detailed records of supplier lead times under various conditions</td>
+          </tr>
+          <tr>
+            <td><strong>Cost-Related Data</strong></td>
+            <td>Procurement, transportation, and financial impact of stockouts</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <!-- Slide 6: Analytics Methods -->
+    <section class="slide slide--content">
+      <h2>Analytics Methods</h2>
+      <div class="method-grid">
+        <div class="method-item">
+          <i class="fas fa-calculator method-icon"></i>
+          <div>
+            <strong>Linear Programming</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Optimizing supplier selection and capacity allocation while minimizing costs</p>
+          </div>
+        </div>
+        <div class="method-item">
+          <i class="fas fa-dice method-icon"></i>
+          <div>
+            <strong>Monte Carlo Simulations</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Assessing impact of uncertainty in demand and supply lead times</p>
+          </div>
+        </div>
+        <div class="method-item">
+          <i class="fas fa-chart-line method-icon"></i>
+          <div>
+            <strong>Time-Series Analysis</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Forecasting demand trends and planning for seasonal fluctuations</p>
+          </div>
+        </div>
+        <div class="method-item">
+          <i class="fas fa-sliders-h method-icon"></i>
+          <div>
+            <strong>Constraint-Based Optimization</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Accommodating multiple variables and restrictions in supplier capabilities</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 7: KPIs -->
+    <section class="slide slide--content">
+      <h2>Key Performance Indicators</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fas fa-clock"></i></div>
+          <h4>Supplier Lead Time</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Time from order placement to receipt</p>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fas fa-check-double"></i></div>
+          <h4>Fill Rate</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">% of orders fulfilled on first shipment</p>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fas fa-random"></i></div>
+          <h4>Flexibility</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Ability to handle varying order sizes</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 8: Related Cases -->
+    <section class="slide slide--content">
+      <h2>Related Use Cases</h2>
+      <div class="related-links">
+        <a href="../../plan/16-vmi/index.html" class="related-link">
+          <i class="fas fa-handshake"></i> Vendor Managed Inventory
+        </a>
+        <a href="../01-supplier-performance/index.html" class="related-link">
+          <i class="fas fa-chart-line"></i> Supplier Performance Metrics
+        </a>
+        <a href="../../plan/13-demand-forecasting/index.html" class="related-link">
+          <i class="fas fa-chart-bar"></i> Demand Forecasting
+        </a>
+      </div>
+      <div style="margin-top: var(--space-12); text-align: center;">
+        <a href="../index.html" class="nav-btn">
+          <i class="fas fa-th-large"></i> All SOURCE Cases
+        </a>
+      </div>
+      <p style="margin-top: var(--space-6); text-align: center;">
+        <a href="../02-supplier-risk/index.html" style="color: var(--color-accent);">
+          <i class="fas fa-arrow-left"></i> Previous: Supplier Risk
+        </a>
+        &nbsp;|&nbsp;
+        <a href="../04-compliance-tracking/index.html" style="color: var(--color-accent);">
+          Next: Compliance Tracking <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </section>
+    
+  </div>
+  
+  <script src="../../../assets/js/navigation.js"></script>
+</body>
+</html>

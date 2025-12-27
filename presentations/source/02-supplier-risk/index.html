@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supplier Risk Analysis | SOURCE | Supply Chain Analytics</title>
+  
+  <link rel="stylesheet" href="../../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../../../assets/css/base.css">
+  <link rel="stylesheet" href="../../../assets/css/theme-source.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    .case-header { display: flex; align-items: center; gap: var(--space-4); justify-content: center; margin-bottom: var(--space-4); }
+    .case-number { display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: var(--color-primary); color: white; font-size: var(--font-size-2xl); font-weight: 700; border-radius: var(--radius-lg); }
+    .objective-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); margin-top: var(--space-6); }
+    .objective-card { background: white; padding: var(--space-6); border-radius: var(--radius-md); border-left: 4px solid var(--color-primary); }
+    .objective-card h3 { color: var(--color-primary); margin-bottom: var(--space-2); font-size: var(--font-size-lg); }
+    .data-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-6); margin-top: var(--space-6); }
+    .method-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); margin-top: var(--space-6); }
+    .method-item { display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-4); background: white; border-radius: var(--radius-md); }
+    .method-icon { color: var(--color-primary); font-size: var(--font-size-xl); margin-top: 2px; }
+    .kpi-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-6); margin-top: var(--space-6); text-align: center; }
+    .kpi-card { background: white; padding: var(--space-6); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+    .kpi-icon { font-size: 2.5rem; color: var(--color-primary); margin-bottom: var(--space-3); }
+    .insight-box { background: var(--color-primary-dark); color: var(--color-text-light); padding: var(--space-6); border-radius: var(--radius-lg); margin-top: var(--space-6); }
+    .related-links { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-6); }
+    .related-link { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-3) var(--space-5); background: var(--color-bg-alt); border-radius: var(--radius-full); text-decoration: none; color: var(--color-text-light); transition: all var(--transition-fast); }
+    .related-link:hover { background: var(--color-primary); text-decoration: none; }
+    @media (max-width: 768px) { .data-grid, .method-grid, .kpi-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body class="theme-ocean-depths">
+  <div class="presentation">
+    
+    <!-- Slide 1: Title -->
+    <section class="slide slide--title active">
+      <p style="text-transform: uppercase; letter-spacing: 0.3em; color: var(--color-accent); margin-bottom: var(--space-2);">
+        SOURCE | Supply Chain Analytics
+      </p>
+      <div class="case-header">
+        <span class="case-number">02</span>
+      </div>
+      <h1>Supplier Risk Analysis</h1>
+      <p style="font-size: var(--font-size-lg); color: var(--color-text-light); margin-top: var(--space-4);">
+        Identifying and mitigating supplier-related risks
+      </p>
+    </section>
+    
+    <!-- Slide 2: What Is It -->
+    <section class="slide slide--content">
+      <h2>What Is It?</h2>
+      <div style="max-width: 800px;">
+        <p style="font-size: var(--font-size-lg);">
+          Supplier Risk Analytics refers to the use of data analysis techniques and tools to assess and manage risks associated with suppliers in the supply chain.
+        </p>
+        <ul style="margin-top: var(--space-6); font-size: var(--font-size-lg);">
+          <li><strong>Supplier performance</strong> - Historical reliability and consistency</li>
+          <li><strong>Financial stability</strong> - Credit scores, liquidity, market position</li>
+          <li><strong>Compliance</strong> - Regulatory adherence and certifications</li>
+          <li><strong>Operational risks</strong> - Geographic, political, environmental factors</li>
+        </ul>
+        <p style="margin-top: var(--space-4); font-size: var(--font-size-lg);">
+          Utilizing predictive modeling, risk scoring, and scenario analysis to anticipate potential issues and mitigate risks.
+        </p>
+      </div>
+    </section>
+    
+    <!-- Slide 3: Business Objectives -->
+    <section class="slide slide--content">
+      <h2>Business Objectives</h2>
+      <div class="objective-grid">
+        <div class="objective-card">
+          <h3><i class="fas fa-shield-alt"></i> Risk Identification & Mitigation</h3>
+          <p>Proactively identifying risks and implementing strategies to mitigate them before they impact operations.</p>
+        </div>
+        <div class="objective-card">
+          <h3><i class="fas fa-link"></i> Supply Chain Resilience</h3>
+          <p>Enhancing the resilience and reliability of the supply chain through informed supplier management.</p>
+        </div>
+        <div class="objective-card">
+          <h3><i class="fas fa-users"></i> Optimized Supplier Relations</h3>
+          <p>Building and maintaining effective relationships with suppliers based on risk assessment and performance.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 4: Key Challenges -->
+    <section class="slide slide--content">
+      <h2>Key Challenges</h2>
+      <div style="max-width: 800px;">
+        <ol style="font-size: var(--font-size-lg);">
+          <li style="margin-bottom: var(--space-4);">
+            <strong>Data Availability and Quality</strong><br>
+            <span style="color: var(--color-text-muted);">Ensuring access to accurate and comprehensive data on suppliers for meaningful analysis.</span>
+          </li>
+          <li style="margin-bottom: var(--space-4);">
+            <strong>Complexity of Risk Factors</strong><br>
+            <span style="color: var(--color-text-muted);">Identifying and assessing a wide range of risk factors that vary across different suppliers and regions.</span>
+          </li>
+          <li style="margin-bottom: var(--space-4);">
+            <strong>Dynamic Market Conditions</strong><br>
+            <span style="color: var(--color-text-muted);">Adapting to rapidly changing market and geopolitical conditions that can influence supplier risk.</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+    
+    <!-- Slide 5: Data Requirements -->
+    <section class="slide slide--content">
+      <h2>Data Requirements</h2>
+      <div class="data-grid">
+        <div>
+          <h3><i class="fas fa-building"></i> Internal Data</h3>
+          <ul>
+            <li><strong>Performance Data</strong> - Delivery, quality, responsiveness history</li>
+            <li><strong>Financial Data</strong> - Credit scores, financial statements</li>
+            <li><strong>Compliance Records</strong> - Regulatory and contractual adherence</li>
+          </ul>
+        </div>
+        <div>
+          <h3><i class="fas fa-globe"></i> External Data</h3>
+          <ul>
+            <li><strong>Market Data</strong> - Economic indicators, geopolitical events</li>
+            <li><strong>Data Providers</strong> - Dun & Bradstreet enriched profiles</li>
+            <li><strong>Industry Trends</strong> - Sector-specific risk factors</li>
+          </ul>
+        </div>
+      </div>
+      <div class="insight-box">
+        <p><i class="fas fa-lightbulb"></i> <strong>Key Insight:</strong> Enriching internal data with external data can significantly enhance supplier risk analytics. Only both perspectives provide the full picture!</p>
+      </div>
+    </section>
+    
+    <!-- Slide 6: Analytics Methods -->
+    <section class="slide slide--content">
+      <h2>Analytics Methods</h2>
+      <div class="method-grid">
+        <div class="method-item">
+          <i class="fas fa-tachometer-alt method-icon"></i>
+          <div>
+            <strong>Risk Scoring Algorithms</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Developing a scoring system to quantify risk levels for each supplier</p>
+          </div>
+        </div>
+        <div class="method-item">
+          <i class="fas fa-dice method-icon"></i>
+          <div>
+            <strong>Scenario Analysis</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Monte Carlo simulations and what-if analysis to evaluate impact of potential risk events</p>
+          </div>
+        </div>
+        <div class="method-item">
+          <i class="fas fa-project-diagram method-icon"></i>
+          <div>
+            <strong>Network Analysis</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Evaluating interdependencies within the supply chain to understand ripple effects</p>
+          </div>
+        </div>
+        <div class="method-item">
+          <i class="fas fa-brain method-icon"></i>
+          <div>
+            <strong>Predictive Modeling</strong>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Anticipating future risks based on patterns and early warning signals</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 7: KPIs -->
+    <section class="slide slide--content">
+      <h2>Key Performance Indicators</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fas fa-heartbeat"></i></div>
+          <h4>Supply Chain Resilience</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Ability to respond to and recover from risks</p>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-icon"><i class="fas fa-coins"></i></div>
+          <h4>Cost of Risk Management</h4>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">Expenses related to managing and mitigating supplier risks</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Slide 8: Related Cases -->
+    <section class="slide slide--content">
+      <h2>Related Use Cases</h2>
+      <div class="related-links">
+        <a href="../01-supplier-performance/index.html" class="related-link">
+          <i class="fas fa-chart-line"></i> Supplier Performance Metrics
+        </a>
+        <a href="../../plan/19-risk-analysis/index.html" class="related-link">
+          <i class="fas fa-exclamation-circle"></i> Supply Chain Risk Analysis
+        </a>
+        <a href="../04-compliance-tracking/index.html" class="related-link">
+          <i class="fas fa-clipboard-check"></i> Compliance Tracking
+        </a>
+      </div>
+      <div style="margin-top: var(--space-12); text-align: center;">
+        <a href="../index.html" class="nav-btn">
+          <i class="fas fa-th-large"></i> All SOURCE Cases
+        </a>
+      </div>
+      <p style="margin-top: var(--space-6); text-align: center;">
+        <a href="../01-supplier-performance/index.html" style="color: var(--color-accent);">
+          <i class="fas fa-arrow-left"></i> Previous: Supplier Performance
+        </a>
+        &nbsp;|&nbsp;
+        <a href="../03-supplier-capacity/index.html" style="color: var(--color-accent);">
+          Next: Capacity Planning <i class="fas fa-arrow-right"></i>
+        </a>
+      </p>
+    </section>
+    
+  </div>
+  
+  <script src="../../../assets/js/navigation.js"></script>
+</body>
+</html>
