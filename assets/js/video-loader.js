@@ -56,10 +56,10 @@ class VideoLoader {
         <i class="fab fa-youtube" style="font-size: 4rem; margin-bottom: 1rem; color: #ff0000;"></i>
         <p style="font-weight: 600;">${title}</p>
         <p style="font-size: 0.875rem;">Coming Soon</p>
-        <a href="${this.manifest?.channel?.url || 'https://youtube.com/@data2value'}" 
-           target="_blank" 
+        <a href="${this.manifest?.channel?.url || 'https://www.youtube.com/@frankkienle7312'}"
+           target="_blank"
            style="margin-top: 1rem; padding: 0.5rem 1rem; background: var(--color-primary, #333); color: white; border-radius: 4px; text-decoration: none; font-size: 0.875rem;">
-          Subscribe to Data2Value
+          Subscribe on YouTube
         </a>
       </div>
     `;

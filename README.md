@@ -1,39 +1,87 @@
-# Supply Chain Analytics - Interactive Learning Platform
+# Operations Use Case Selection
 
-> Part of the **Data2Value** initiative by Frank Kienle
+> Practical decision support for selecting feasible, valuable analytics and AI use cases in operations and supply chain management.
 
-## 🎯 Overview
+This repository is part of Frank Kienle's Data2Value work: turning operations knowledge, analytics methods, and AI possibilities into assets that managers and teams can actually use.
 
-This platform provides interactive presentations for 25+ supply chain analytics use cases, organized into four clusters:
+The core question is simple, but often ignored:
 
-| Cluster | Theme | Cases |
-|---------|-------|-------|
-| 🌊 SOURCE | Ocean Depths | Supplier analytics |
-| ⚡ MAKE | Tech Innovation | Manufacturing analytics |
-| ❄️ PLAN | Arctic Frost | Planning analytics |
-| ⬛ DELIVER | Modern Minimalist | Delivery analytics |
+**Which analytics or AI use cases are worth doing next — and which ones only look good in a slide deck?**
 
-## 🚀 Quick Start
+Many organizations do not fail because they have no ideas. They fail because they choose use cases without checking business value, data readiness, operational feasibility, adoption risk, and the decision process the use case is supposed to improve.
 
-Visit the live site: [Supply Chain Analytics](https://kienlef.github.io/supply-chain-analytics)
+This repository helps structure that selection conversation.
 
-## 📁 Structure
+---
 
-- `/presentations` - Interactive HTML presentations
-- `/content` - Original markdown content
-- `/assets` - CSS, JS, images, fonts
-- `/videos` - YouTube integration config
+## Who this is for
 
-## 📊 Use Cases
+This material is useful for:
 
-### SOURCE (5 Cases)
+- operations and supply chain managers who need to prioritize analytics and AI ideas,
+- analytics translators who connect business questions with technical teams,
+- data science and BI teams who need better business framing before building models,
+- lecturers, coaches, and facilitators teaching practical analytics use-case selection,
+- teams preparing for AI-agent readiness in operations.
+
+It is deliberately practical. The goal is not to collect AI buzzwords. The goal is to identify use cases that can survive contact with operational reality.
+
+---
+
+## Business problem
+
+Analytics and AI initiatives often start with the wrong question:
+
+> Which model or tool should we use?
+
+A better starting point is:
+
+> Which operational decision, process, or bottleneck should we improve — and is this use case feasible enough to justify investment?
+
+Use-case selection should balance at least five dimensions:
+
+1. **Business value** — cost, service, risk, quality, speed, sustainability, or resilience impact.
+2. **Decision relevance** — whether the output changes a real management or operational decision.
+3. **Data readiness** — availability, quality, granularity, ownership, and update frequency.
+4. **Implementation feasibility** — process integration, systems, skills, governance, and change effort.
+5. **Adoption risk** — whether people will trust, use, and maintain the solution.
+
+For AI agents, this becomes even more important. A chatbot can advise. An agent changes workflows. That means the use case must be selected with stronger attention to risk, control points, accountability, and integration.
+
+---
+
+## What is inside this repository
+
+The repository contains an interactive learning platform with 25+ operations and supply chain analytics use cases. The material is organized around four operational domains:
+
+| Domain | Focus | Example questions |
+|---|---|---|
+| SOURCE | Supplier and procurement analytics | Which suppliers create risk? Where do quality or capacity issues appear first? |
+| MAKE | Manufacturing and production analytics | Which production constraints matter? Where can predictive maintenance or quality analytics help? |
+| PLAN | Planning and inventory analytics | Where do forecasts, inventories, S&OP, and segmentation decisions need better support? |
+| DELIVER | Fulfillment and logistics analytics | Where can customer service, network design, transportation, and routing decisions improve? |
+
+Main folders:
+
+- `index.html` — landing page for the interactive platform.
+- `presentations/` — interactive HTML presentations by domain and use case.
+- `assets/` — CSS, JavaScript, fonts, and presentation styling.
+- `videos/video-manifest.json` — placeholder configuration for YouTube integration.
+
+---
+
+## Use-case map
+
+### SOURCE — supplier analytics
+
 - Supplier Performance Metrics
 - Supplier Risk Analysis
 - Supplier Capacity Planning
-- Compliance/Document Tracking
+- Compliance / Document Tracking
 - Raw Materials Quality Analytics
 
-### MAKE (7 Cases)
+### MAKE — manufacturing analytics
+
 - Manufacturing Cost Analysis
 - Production Scheduling
 - Batch Size Optimization
@@ -42,7 +90,8 @@ Visit the live site: [Supply Chain Analytics](https://kienlef.github.io/supply-c
 - Digital Twin
 - Overall Equipment Effectiveness
 
-### PLAN (7 Cases)
+### PLAN — planning analytics
+
 - Demand Forecasting
 - Inventory Optimization
 - Multi-Echelon Inventory Optimization
@@ -51,7 +100,8 @@ Visit the live site: [Supply Chain Analytics](https://kienlef.github.io/supply-c
 - Sales & Operations Planning
 - Supply Chain Risk Analysis
 
-### DELIVER (6 Cases)
+### DELIVER — delivery analytics
+
 - Customer Satisfaction Analysis
 - Order Fulfillment Analytics
 - Supply Chain Network Design
@@ -59,11 +109,116 @@ Visit the live site: [Supply Chain Analytics](https://kienlef.github.io/supply-c
 - Delivery Time Prediction
 - Delivery Route Optimization
 
-## 🔗 Related
+---
 
-- [Data2Value YouTube Channel](#)
-- [LinkedIn](https://linkedin.com/in/frankkienle)
+## How to use this material
 
-## 📄 License
+### For managers and business teams
 
-Content © Frank Kienle. Educational use encouraged.
+Use the repository as a structured discussion tool:
+
+1. Browse the use-case domains.
+2. Select 3-5 candidate use cases relevant to your operation.
+3. Discuss value, feasibility, data readiness, and adoption risk.
+4. Prioritize one small pilot before scaling the topic.
+5. Define the decision the analytics or AI system should improve.
+
+A useful rule:
+
+> If nobody can name the decision that changes, the use case is not ready.
+
+### For analytics translators
+
+Use the cases as workshop prompts:
+
+- What is the operational pain point?
+- Who owns the decision?
+- Which data is needed?
+- What would a useful output look like?
+- What would make users ignore the result?
+- Is this a dashboard, prediction, optimization model, workflow automation, or future AI-agent candidate?
+
+### For data science teams
+
+Use the material before model building:
+
+- separate business questions from model questions,
+- identify data and process dependencies early,
+- check whether the use case needs prediction, optimization, simulation, classification, monitoring, or simple reporting,
+- avoid building technically interesting solutions for low-value decisions.
+
+---
+
+## Reproducibility and local setup
+
+This repository is a static HTML learning platform. No backend setup is required for basic use.
+
+Recommended local preview:
+
+```bash
+cd operations_use_case_selection
+python3 -m http.server 8000
+```
+
+Then open:
+
+```text
+http://localhost:8000
+```
+
+You can also open `index.html` directly in a browser, but using a small local web server is usually more reliable for loading assets and future embedded video configuration.
+
+No private datasets are required. The material is educational and conceptual.
+
+---
+
+## Related content and next step
+
+- Topic page: AI Agents in Operations — planned at `https://kienlef.github.io/ai-agents-in-operations/` after the homepage draft is reviewed and published.
+- YouTube channel until a specific playlist is curated: https://www.youtube.com/@frankkienle7312
+- GitHub repository: https://github.com/kienlef/operations_use_case_selection
+- First free resource: Agent Readiness Checklist for Operations Professionals — coming via `https://kienlef.github.io/register/` after the registration path is reviewed and published.
+- Professional profile: https://linkedin.com/in/frankkienle
+
+Recommended path: read the AI Agents in Operations topic page once live, inspect the use-case selection material in this repository, then use the future readiness checklist to decide which workflows are bounded enough for AI-agent support.
+
+---
+
+## Why this matters for AI-agent readiness
+
+AI agents in operations should not start with tool excitement. They should start with use-case discipline.
+
+A good first agentic use case is usually not the most glamorous one. It is a workflow where:
+
+- the decision process is repeated often,
+- the data sources are known,
+- the risk is bounded,
+- human review points are clear,
+- the business owner can explain the value,
+- failure modes are visible and manageable.
+
+This repository can therefore be used as a bridge from classic analytics use-case selection to more advanced AI-agent prioritization.
+
+---
+
+## Review status
+
+This README is prepared as a local draft for Frank Kienle's review before commit and push.
+
+No remote changes should be made until the README, links, and CTA placeholders are approved.
+
+---
+
+## Disclaimer and confidentiality note
+
+This repository is a personal educational/knowledge project by Frank Kienle. It is not affiliated with, endorsed by, or representative of any employer. Code, examples, and datasets are for learning and demonstration purposes. No employer-confidential data or internal business logic is included.
+
+Users should adapt the ideas to their own context and validate assumptions, data quality, risks, and governance requirements before applying them in real operations.
+
+---
+
+## License note
+
+Content © Frank Kienle. Educational use is encouraged with attribution.
+
+Before reusing substantial parts of the material in commercial training, products, or public derivative works, please check the repository license and contact Frank Kienle if the intended use is unclear.
