@@ -52,7 +52,7 @@ For AI agents, this becomes even more important. A chatbot can advise. An agent 
 
 ## What is inside this repository
 
-The repository contains an interactive learning platform with 25+ operations and supply chain analytics use cases. The material is organized around four operational domains:
+The repository contains 25 operations and supply-chain analytics case briefs. The public `index.html` consolidates every brief into one searchable Blue Trust page, while the original interactive slide versions remain available as supporting material. The cases are organized around four operational domains:
 
 | Domain | Focus | Example questions |
 |---|---|---|
@@ -63,9 +63,10 @@ The repository contains an interactive learning platform with 25+ operations and
 
 Main folders:
 
-- `index.html` — landing page for the interactive platform.
+- `index.html` — generated one-page case library with search, domain navigation, and expandable full briefs.
 - `presentations/` — interactive HTML presentations by domain and use case.
 - `assets/` — CSS, JavaScript, fonts, and presentation styling.
+- `scripts/build_one_page.py` — rebuilds `index.html` from the 25 presentation sources.
 - `videos/video-manifest.json` — placeholder configuration for YouTube integration.
 
 ---
@@ -117,7 +118,7 @@ Main folders:
 
 Use the repository as a structured discussion tool:
 
-1. Browse the use-case domains.
+1. Search or browse the use-case domains on the one-page library.
 2. Select 3-5 candidate use cases relevant to your operation.
 3. Discuss value, feasibility, data readiness, and adoption risk.
 4. Prioritize one small pilot before scaling the topic.
@@ -151,7 +152,12 @@ Use the material before model building:
 
 ## Reproducibility and local setup
 
-This repository is a static HTML learning platform. No backend setup is required for basic use.
+This repository is a static HTML learning platform. No backend setup is required for basic use. To regenerate the consolidated library after editing a presentation source, install Beautiful Soup and run the builder:
+
+```bash
+python3 -m pip install -r requirements-dev.txt
+python3 scripts/build_one_page.py
+```
 
 Recommended local preview:
 
@@ -174,13 +180,15 @@ No private datasets are required. The material is educational and conceptual.
 
 ## Related content and next step
 
-- Topic page: AI Agents in Operations — planned at `https://kienlef.github.io/ai-agents-in-operations/` after the homepage draft is reviewed and published.
+- AI in Operations: https://kienlef.github.io/ai-agents-in-operations/
+- Operations Intelligence Map: https://kienlef.github.io/operations-intelligence-map/
+- Twenty-seven decision owners and agent boundaries: https://kienlef.github.io/operations-use-cases/
+- One-page analytical case library: https://kienlef.github.io/operations_use_case_selection/index.html
 - YouTube channel until a specific playlist is curated: https://www.youtube.com/@frankkienle7312
 - GitHub repository: https://github.com/kienlef/operations_use_case_selection
-- First free resource: Agent Readiness Checklist for Operations Professionals — coming via `https://kienlef.github.io/register/` after the registration path is reviewed and published.
 - Professional profile: https://linkedin.com/in/frankkienle
 
-Recommended path: read the AI Agents in Operations topic page once live, inspect the use-case selection material in this repository, then use the future readiness checklist to decide which workflows are bounded enough for AI-agent support.
+Recommended path: use the relationship map to understand the operating system, check the decision owner and agent boundary, then inspect the analytical brief on the one-page library.
 
 ---
 
@@ -198,14 +206,6 @@ A good first agentic use case is usually not the most glamorous one. It is a wor
 - failure modes are visible and manageable.
 
 This repository can therefore be used as a bridge from classic analytics use-case selection to more advanced AI-agent prioritization.
-
----
-
-## Review status
-
-This README is prepared as a local draft for Frank Kienle's review before commit and push.
-
-No remote changes should be made until the README, links, and CTA placeholders are approved.
 
 ---
 
